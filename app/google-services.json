@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "5560869672",
+    "project_id": "saborear-fb32f",
+    "storage_bucket": "saborear-fb32f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5560869672:android:c9db86e79aa592e332261d",
+        "android_client_info": {
+          "package_name": "IClima.com.br"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApBH7j5X6sQSoPdp2cj8U_x6mkMDMSvLw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

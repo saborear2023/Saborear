@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cadastro_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1BAA4A">
+
+    <ImageView
+        android:id="@+id/cadastro_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/saborear_backgroundz" />
+
+    <ImageView
+        android:id="@+id/cadastro_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/saborear_logo_chapeu"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/cadastro_criarconta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/alata"
+        android:text="@string/cadastro_txt_criar"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadastro_icon" />
+
+    <ImageView
+        android:id="@+id/cadastro_box_nome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadastro_criarconta"
+        app:srcCompat="@drawable/saborear_campo_01" />
+
+    <ImageView
+        android:id="@+id/cadastro_box_telefone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadastro_box_nome"
+        app:srcCompat="@drawable/saborear_campo_01"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/cadastro_box_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadastro_box_telefone"
+        app:srcCompat="@drawable/saborear_campo_01"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/cadastro_box_senha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadastro_box_email"
+        app:srcCompat="@drawable/saborear_campo_01"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/cadastro_icon_telefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/cadastro_box_telefone"
+        app:layout_constraintStart_toStartOf="@+id/cadastro_box_telefone"
+        app:layout_constraintTop_toTopOf="@+id/cadastro_box_telefone"
+        app:layout_constraintVertical_bias="0.6"
+        app:srcCompat="@drawable/saborear_icon_telefone" />
+
+    <ImageView
+        android:id="@+id/cadastro_icon_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/cadastro_box_senha"
+        app:layout_constraintStart_toStartOf="@+id/cadastro_box_senha"
+        app:layout_constraintTop_toTopOf="@+id/cadastro_box_senha"
+        app:layout_constraintVertical_bias="0.6"
+        app:srcCompat="@drawable/saborear_icon_senha" />
+
+    <ImageView
+        android:id="@+id/cadastro_icon_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/cadastro_box_nome"
+        app:layout_constraintStart_toStartOf="@+id/cadastro_box_nome"
+        app:layout_constraintTop_toTopOf="@+id/cadastro_box_nome"
+        app:layout_constraintVertical_bias="0.6"
+        app:srcCompat="@drawable/saborear_icon_perfil"
+        app:tint="#80000000" />
+
+    <ImageView
+        android:id="@+id/cadastro_icon_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/cadastro_box_email"
+        app:layout_constraintStart_toStartOf="@+id/cadastro_box_email"
+        app:layout_constraintTop_toTopOf="@+id/cadastro_box_email"
+        app:layout_constraintVertical_bias="0.6"
+        app:srcCompat="@drawable/saborear_icon_email" />
+
+    <EditText
+        android:id="@+id/cadastro_insert_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:hint="@string/cadastro_nome"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:maxLength="30"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cadastro_box_nome"
+        app:layout_constraintEnd_toEndOf="@+id/cadastro_box_nome"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/cadastro_icon_nome"
+        app:layout_constraintTop_toTopOf="@+id/cadastro_box_nome"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/cadastro_insert_telefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:hint="@string/cadastro_telefone"
+        android:importantForAutofill="no"
+        android:inputType="number|phone"
+        android:maxLength="11"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cadastro_box_telefone"
+        app:layout_constraintEnd_toEndOf="@+id/cadastro_box_telefone"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/cadastro_icon_telefone"
+        app:layout_constraintTop_toTopOf="@+id/cadastro_box_telefone"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/cadastro_insert_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:hint="@string/cadastro_email"
+        android:importantForAutofill="no"
+        android:inputType="text|textEmailAddress"
+        android:maxLength="30"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cadastro_box_email"
+        app:layout_constraintEnd_toEndOf="@+id/cadastro_box_email"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/cadastro_icon_email"
+        app:layout_constraintTop_toTopOf="@+id/cadastro_box_email"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/cadastro_insert_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:hint="@string/cadastro_senha"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:maxLength="30"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cadastro_box_senha"
+        app:layout_constraintEnd_toEndOf="@+id/cadastro_box_senha"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/cadastro_icon_senha"
+        app:layout_constraintTop_toTopOf="@+id/cadastro_box_senha"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/cadastro_btn_criar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadastro_box_senha"
+        app:srcCompat="@drawable/saborear_btn_criar"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/cadastro_btn_entrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00FFFFFF"
+        android:fontFamily="@font/alata"
+        android:text="@string/cadastro_entrar"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadastro_btn_criar"
+        tools:ignore="TextContrastCheck" />
+
+    <ProgressBar
+        android:id="@+id/cadastro_carregar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:indeterminateTint="#000000"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

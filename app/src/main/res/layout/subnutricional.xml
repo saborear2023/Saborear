@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    tools:ignore="TextSizeCheck">
+
+    <TextView
+        android:id="@+id/subnutricional_titulo_gorduras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:scrollbars="vertical"
+        android:text="@string/gorduras"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subnutricional_titulo_proteinas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:scrollbars="vertical"
+        android:text="@string/prote_nas"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/subnutricional_titulo_gorduras"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subnutricional_titulo_calorico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:scrollbars="vertical"
+        android:text="@string/cal_rico"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/subnutricional_titulo_proteinas"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subnutricional_titulo_carboidratos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:scrollbars="vertical"
+        android:text="@string/carboidratos"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/subnutricional_titulo_gorduras"
+        app:layout_constraintTop_toBottomOf="@+id/subnutricional_insert_gorduratrans" />
+
+    <TextView
+        android:id="@+id/subnutricional_titulo_alerta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/alata"
+        android:scrollbars="vertical"
+        android:text="@string/valores_estimados_consulte_sempre_um_nutricionista"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subnutricional_insert_acucar" />
+
+    <TextView
+        android:id="@+id/subnutricional_insert_gordurasaturada"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/alata"
+        android:scrollbars="vertical"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/subnutricional_insert_vitaminad"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/subnutricional_titulo_gorduras"
+        app:layout_constraintTop_toBottomOf="@+id/subnutricional_titulo_gorduras"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/subnutricional_insert_vitaminad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/alata"
+        android:scrollbars="vertical"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/subnutricional_insert_calorias"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/subnutricional_titulo_proteinas"
+        app:layout_constraintTop_toBottomOf="@+id/subnutricional_titulo_proteinas"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/subnutricional_insert_calorias"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/alata"
+        android:scrollbars="vertical"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/subnutricional_titulo_calorico"
+        app:layout_constraintTop_toBottomOf="@+id/subnutricional_titulo_calorico"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/subnutricional_insert_peso"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/alata"
+        android:scrollbars="vertical"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/subnutricional_titulo_calorico"
+        app:layout_constraintTop_toBottomOf="@+id/subnutricional_insert_calorias"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/subnutricional_insert_calcio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/alata"
+        android:scrollbars="vertical"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/subnutricional_insert_peso"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/subnutricional_titulo_proteinas"
+        app:layout_constraintTop_toBottomOf="@+id/subnutricional_insert_vitaminad"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/subnutricional_insert_ferro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/alata"
+        android:scrollbars="vertical"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/subnutricional_insert_peso"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/subnutricional_titulo_proteinas"
+        app:layout_constraintTop_toBottomOf="@+id/subnutricional_insert_calcio"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/subnutricional_insert_potassio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/alata"
+        android:scrollbars="vertical"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/subnutricional_insert_peso"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/subnutricional_titulo_proteinas"
+        app:layout_constraintTop_toBottomOf="@+id/subnutricional_insert_ferro"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/subnutricional_insert_fibra"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/alata"
+        android:scrollbars="vertical"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/subnutricional_insert_potassio"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/subnutricional_titulo_carboidratos"
+        app:layout_constraintTop_toBottomOf="@+id/subnutricional_titulo_carboidratos"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/subnutricional_insert_gorduratrans"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/alata"
+        android:scrollbars="vertical"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/subnutricional_insert_calcio"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/subnutricional_titulo_gorduras"
+        app:layout_constraintTop_toBottomOf="@+id/subnutricional_insert_gordurasaturada"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/subnutricional_insert_acucar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/alata"
+        android:scrollbars="vertical"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/subnutricional_insert_potassio"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/subnutricional_insert_fibra"
+        app:layout_constraintTop_toBottomOf="@+id/subnutricional_insert_fibra"
+        tools:ignore="SmallSp" />
+
+    <ImageButton
+        android:id="@+id/subnutricional_sem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/subnutricional_titulo_alerta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/saborear_semdados"
+        tools:ignore="TouchTargetSizeCheck,ImageContrastCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

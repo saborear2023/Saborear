@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contato_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/contato_btn_voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/saborear_voltar_contato"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/contato_btn_pesquisar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/contato_btn_perfil"
+        app:layout_constraintStart_toEndOf="@+id/contato_btn_home"
+        app:srcCompat="@drawable/saborear_icon_lupa" />
+
+    <ImageButton
+        android:id="@+id/contato_btn_home"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:windowSoftInputMode="adjustPan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/saborear_icon_home" />
+
+    <ImageButton
+        android:id="@+id/contato_btn_perfil"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/saborear_icon_perfil" />
+
+    <ImageButton
+        android:id="@+id/contato_btn_notificacao"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:windowSoftInputMode="adjustPan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/contato_btn_back"
+        app:layout_constraintStart_toEndOf="@+id/contato_btn_perfil"
+        app:srcCompat="@drawable/saborear_icon_notificacao" />
+
+    <ImageButton
+        android:id="@+id/contato_btn_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:windowSoftInputMode="adjustPan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/saborear_voltar" />
+
+    <TextView
+        android:id="@+id/contato_titulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/alata"
+        android:text="@string/d_vidas_reclama_es_e_sugest_es_nentre_em_contato_conosco"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contato_btn_voltar" />
+
+    <ImageView
+        android:id="@+id/contato_campo_01"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contato_titulo"
+        app:srcCompat="@drawable/saborear_campo_08" />
+
+    <ImageView
+        android:id="@+id/contato_campo_02"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contato_campo_01"
+        app:srcCompat="@drawable/saborear_campo_08" />
+
+    <ImageView
+        android:id="@+id/contato_icon_email"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/contato_campo_01"
+        app:layout_constraintStart_toStartOf="@+id/contato_campo_01"
+        app:layout_constraintTop_toTopOf="@+id/contato_campo_01"
+        app:srcCompat="@drawable/saborear_icon_contatoemail" />
+
+    <ImageView
+        android:id="@+id/contato_icon_insta"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/contato_campo_02"
+        app:layout_constraintStart_toStartOf="@+id/contato_campo_02"
+        app:layout_constraintTop_toTopOf="@+id/contato_campo_02"
+        app:srcCompat="@drawable/saborear_icon_contatoinsta" />
+
+    <TextView
+        android:id="@+id/contato_txt_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/alata"
+        android:text="@string/saborearcti_gmail_com"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/contato_campo_01"
+        app:layout_constraintEnd_toEndOf="@+id/contato_campo_01"
+        app:layout_constraintStart_toEndOf="@+id/contato_icon_email"
+        app:layout_constraintTop_toTopOf="@+id/contato_campo_01"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <TextView
+        android:id="@+id/contato_txt_insta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/alata"
+        android:text="@string/saborear_insta"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/contato_campo_02"
+        app:layout_constraintEnd_toEndOf="@+id/contato_campo_02"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/contato_icon_insta"
+        app:layout_constraintTop_toTopOf="@+id/contato_campo_02"
+        app:layout_constraintVertical_bias="0.45" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

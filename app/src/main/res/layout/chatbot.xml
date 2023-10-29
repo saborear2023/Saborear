@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/chatbot_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <ImageButton
+            android:id="@+id/chatbot_btn_visualizar"
+            android:layout_width="38dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="28dp"
+            android:background="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:scaleType="fitXY"
+            android:src="@drawable/saborear_icon_olho"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/chatbot_btn_voltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="28dp"
+            android:background="#00FFFFFF"
+            android:importantForAccessibility="no"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/saborear_voltar_chatbot"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/chatbot_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp"
+            android:background="#00FFFFFF"
+            android:importantForAccessibility="no"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chatbot_btn_voltar"
+            app:srcCompat="@drawable/saborear_chatbot_icon"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/saborear_campo_01"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="16dp"
+            android:importantForAccessibility="no"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/chatbot_btn_pesquisar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/saborear_campo_01"
+            app:tint="#4DD9D9D9"
+            tools:ignore="ImageContrastCheck" />
+
+        <ListView
+            android:id="@+id/chatbot_chat"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="16dp"
+            android:background="#00FFFFFF"
+            android:backgroundTint="#00FFFFFF"
+            android:cacheColorHint="#00FFFFFF"
+            android:divider="@color/white"
+            android:dividerHeight="8dp"
+            android:importantForAccessibility="no"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:transcriptMode="alwaysScroll"
+            app:layout_constraintBottom_toTopOf="@+id/chatbot_alternativas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chatbot_icon"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="NestedScrolling"
+            tools:listitem="@layout/submensagem" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/chatbot_alternativas"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="8dp"
+            android:scrollbars="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/saborear_campo_01"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/chatbot_insert"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#00FFFFFF"
+            android:enabled="false"
+            android:gravity="center_vertical"
+            android:scrollbars="vertical"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/saborear_campo_01"
+            app:layout_constraintEnd_toStartOf="@+id/chatbot_btn_enviar"
+            app:layout_constraintStart_toStartOf="@+id/saborear_campo_01"
+            app:layout_constraintTop_toTopOf="@+id/saborear_campo_01"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/chatbot_btn_pesquisar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/chatbot_btn_perfil"
+            app:layout_constraintStart_toEndOf="@+id/chatbot_btn_home"
+            app:srcCompat="@drawable/saborear_icon_lupa" />
+
+        <ImageButton
+            android:id="@+id/chatbot_btn_home"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:windowSoftInputMode="adjustPan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/saborear_icon_home" />
+
+        <ImageButton
+            android:id="@+id/chatbot_btn_perfil"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/saborear_icon_perfil" />
+
+        <ImageButton
+            android:id="@+id/chatbot_btn_notificacao"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:windowSoftInputMode="adjustPan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/chatbot_btn_back"
+            app:layout_constraintStart_toEndOf="@+id/chatbot_btn_perfil"
+            app:srcCompat="@drawable/saborear_icon_notificacao" />
+
+        <ImageButton
+            android:id="@+id/chatbot_btn_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:windowSoftInputMode="adjustPan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/saborear_voltar" />
+
+        <ImageButton
+            android:id="@+id/chatbot_btn_enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="#00FFFFFF"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="@+id/saborear_campo_01"
+            app:layout_constraintEnd_toEndOf="@+id/saborear_campo_01"
+            app:layout_constraintTop_toTopOf="@+id/saborear_campo_01"
+            app:srcCompat="@drawable/saborear_btn_enviar"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <ProgressBar
+            android:id="@+id/chatbot_carregar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="32dp"
+            android:layout_height="0dp"
+            android:indeterminateTint="#000000"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/chatbot_chat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/chatbot_chat" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

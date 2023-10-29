@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sobre_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/sobre_background"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#1BAA4A"
+            android:importantForAccessibility="no"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/saborear_backgroundz"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/sobre_btn_voltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="28dp"
+            android:background="#00FFFFFF"
+            android:importantForAccessibility="no"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/saborear_voltar_sobre"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/sobre_btn_pesquisar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:tintMode="src_in"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/sobre_btn_perfil"
+            app:layout_constraintStart_toEndOf="@+id/sobre_btn_home"
+            app:srcCompat="@drawable/saborear_icon_lupa"
+            app:tint="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/sobre_btn_home"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:tintMode="src_in"
+            android:windowSoftInputMode="adjustPan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/saborear_icon_home"
+            app:tint="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/sobre_btn_perfil"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:tintMode="src_in"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/saborear_icon_perfil"
+            app:tint="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/sobre_btn_notificacao"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:tintMode="src_in"
+            android:windowSoftInputMode="adjustPan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/sobre_btn_back"
+            app:layout_constraintStart_toEndOf="@+id/sobre_btn_perfil"
+            app:srcCompat="@drawable/saborear_icon_notificacao"
+            app:tint="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/sobre_btn_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:tintMode="src_in"
+            android:windowSoftInputMode="adjustPan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/saborear_voltar"
+            app:tint="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/sobre_imagem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:importantForAccessibility="no"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sobre_btn_voltar"
+            app:srcCompat="@drawable/saborear_equipe" />
+
+        <ImageView
+            android:id="@+id/sobre_campo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="-4dp"
+            android:layout_marginEnd="32dp"
+            android:importantForAccessibility="no"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="@+id/sobre_mensagem"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sobre_imagem"
+            app:srcCompat="@drawable/saborear_txt_equipe" />
+
+        <TextView
+            android:id="@+id/sobre_titulo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/alata"
+            android:text="@string/quem_a_equipe_saborear"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sobre_imagem" />
+
+        <TextView
+            android:id="@+id/sobre_mensagem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="@font/alata"
+            android:text="@string/sobre"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/sobre_btn_pesquisar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sobre_titulo"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

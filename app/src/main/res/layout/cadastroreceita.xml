@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    android:backgroundTint="#00FFFFFF"
+    android:fillViewport="true"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cadastroreceita_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF">
+
+        <ListView
+            android:id="@+id/cadastroreceita_listview_ingredientes"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="#00FFFFFF"
+            android:backgroundTint="#00FFFFFF"
+            android:cacheColorHint="#00FFFFFF"
+            android:divider="#00FFFFFF"
+            android:dividerHeight="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cadastroreceita_campo_06"
+            tools:ignore="NestedScrolling" />
+
+        <ImageButton
+            android:id="@+id/cadastroreceita_btn_voltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="28dp"
+            android:background="#00FFFFFF"
+            android:importantForAccessibility="no"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/cadastroreceita_btn_pesquisar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cadastroreceita_btn_perfil"
+            app:layout_constraintStart_toEndOf="@+id/cadastroreceita_btn_home"
+            app:srcCompat="@drawable/saborear_icon_lupa" />
+
+        <ImageButton
+            android:id="@+id/cadastroreceita_btn_home"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:windowSoftInputMode="adjustPan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/saborear_icon_home" />
+
+        <ImageButton
+            android:id="@+id/cadastroreceita_btn_perfil"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/saborear_icon_perfil" />
+
+        <ImageButton
+            android:id="@+id/cadastroreceita_btn_notificacao"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:windowSoftInputMode="adjustPan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cadastroreceita_btn_back"
+            app:layout_constraintStart_toEndOf="@+id/cadastroreceita_btn_perfil"
+            app:srcCompat="@drawable/saborear_icon_notificacao" />
+
+        <ImageButton
+            android:id="@+id/cadastroreceita_btn_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:windowSoftInputMode="adjustPan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/saborear_voltar" />
+
+        <ImageView
+            android:id="@+id/cadastroreceita_campo_01"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:importantForAccessibility="no"
+            android:scaleType="fitXY"
+            android:tint="#81F8F8F8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cadastroreceita_btn_voltar"
+            app:srcCompat="@drawable/saborear_campo_08"
+            tools:ignore="UseAppTint,ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/cadastroreceita_campo_02"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:importantForAccessibility="no"
+            android:scaleType="fitXY"
+            android:tint="#81F8F8F8"
+            app:layout_constraintEnd_toEndOf="@+id/cadastroreceita_campo_04"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/cadastroreceita_campo_05"
+            app:layout_constraintTop_toBottomOf="@+id/cadastroreceita_campo_04"
+            app:srcCompat="@drawable/saborear_campo_08"
+            tools:ignore="UseAppTint,ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/cadastroreceita_campo_03"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:importantForAccessibility="no"
+            android:scaleType="fitXY"
+            android:tint="#81F8F8F8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cadastroreceita_campo_01"
+            app:srcCompat="@drawable/saborear_campo_08"
+            tools:ignore="UseAppTint,ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/cadastroreceita_campo_04"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:importantForAccessibility="no"
+            android:scaleType="fitXY"
+            android:tint="#81F8F8F8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cadastroreceita_campo_07"
+            app:srcCompat="@drawable/saborear_campo_08"
+            tools:ignore="UseAppTint,ImageContrastCheck" />
+
+
+        <ImageView
+            android:id="@+id/cadastroreceita_campo_05"
+            android:layout_width="160dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:importantForAccessibility="no"
+            android:scaleType="fitXY"
+            android:tint="#81F8F8F8"
+            app:layout_constraintStart_toStartOf="@+id/cadastroreceita_campo_04"
+            app:layout_constraintTop_toBottomOf="@+id/cadastroreceita_campo_04"
+            app:srcCompat="@drawable/saborear_campo_08"
+            tools:ignore="UseAppTint,ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/cadastroreceita_campo_06"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:importantForAccessibility="no"
+            android:scaleType="fitXY"
+            android:tint="#81F8F8F8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cadastroreceita_campo_03"
+            app:srcCompat="@drawable/saborear_campo_08"
+            tools:ignore="UseAppTint,ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/cadastroreceita_campo_07"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:importantForAccessibility="no"
+            android:scaleType="fitXY"
+            android:tint="#81F8F8F8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cadastroreceita_campo_08"
+            app:srcCompat="@drawable/saborear_campo_08"
+            tools:ignore="UseAppTint,ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/cadastroreceita_campo_08"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:importantForAccessibility="no"
+            android:scaleType="fitXY"
+            android:tint="#81F8F8F8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cadastroreceita_listview_ingredientes"
+            app:srcCompat="@drawable/saborear_campo_08"
+            tools:ignore="UseAppTint,ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/cadastroreceita_icon_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="@+id/cadastroreceita_campo_01"
+            app:layout_constraintStart_toStartOf="@+id/cadastroreceita_campo_01"
+            app:layout_constraintTop_toTopOf="@+id/cadastroreceita_campo_01"
+            app:srcCompat="@drawable/saborear_icon_titulo" />
+
+        <ImageView
+            android:id="@+id/cadastroreceita_icon_categoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="@+id/cadastroreceita_campo_02"
+            app:layout_constraintStart_toStartOf="@+id/cadastroreceita_campo_02"
+            app:layout_constraintTop_toTopOf="@+id/cadastroreceita_campo_02"
+            app:srcCompat="@drawable/saborear_icon_categoria" />
+
+        <ImageView
+            android:id="@+id/cadastroreceita_icon_tempo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="no"
+            android:tint="#989898"
+            app:layout_constraintBottom_toBottomOf="@+id/cadastroreceita_campo_03"
+            app:layout_constraintEnd_toEndOf="@+id/cadastroreceita_icon_titulo"
+            app:layout_constraintStart_toStartOf="@+id/cadastroreceita_icon_titulo"
+            app:layout_constraintTop_toTopOf="@+id/cadastroreceita_campo_03"
+            app:srcCompat="@drawable/saborear_icon_tempo"
+            tools:ignore="UseAppTint,ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/cadastroreceita_icon_modo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="@+id/cadastroreceita_campo_04"
+            app:layout_constraintEnd_toEndOf="@+id/cadastroreceita_icon_olho"
+            app:layout_constraintStart_toStartOf="@+id/cadastroreceita_icon_olho"
+            app:layout_constraintTop_toTopOf="@+id/cadastroreceita_campo_04"
+            app:layout_constraintVertical_bias="0.07999998"
+            app:srcCompat="@drawable/saborear_icon_modo" />
+
+        <ImageView
+            android:id="@+id/cadastroreceita_icon_imagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="@+id/cadastroreceita_campo_05"
+            app:layout_constraintEnd_toEndOf="@+id/cadastroreceita_icon_modo"
+            app:layout_constraintStart_toStartOf="@+id/cadastroreceita_icon_modo"
+            app:layout_constraintTop_toTopOf="@+id/cadastroreceita_campo_05"
+            app:srcCompat="@drawable/saborear_icon_imagem" />
+
+        <ImageView
+            android:id="@+id/cadastroreceita_icon_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="@+id/cadastroreceita_campo_07"
+            app:layout_constraintEnd_toEndOf="@+id/cadastroreceita_icon_modo"
+            app:layout_constraintStart_toStartOf="@+id/cadastroreceita_icon_modo"
+            app:layout_constraintTop_toTopOf="@+id/cadastroreceita_campo_07"
+            app:srcCompat="@drawable/saborear_icon_chat" />
+
+        <ImageView
+            android:id="@+id/cadastroreceita_icon_lanche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="@+id/cadastroreceita_campo_08"
+            app:layout_constraintEnd_toEndOf="@+id/cadastroreceita_icon_modo"
+            app:layout_constraintStart_toStartOf="@+id/cadastroreceita_icon_modo"
+            app:layout_constraintTop_toTopOf="@+id/cadastroreceita_campo_08"
+            app:srcCompat="@drawable/saborear_icon_lanche" />
+
+        <ImageView
+            android:id="@+id/cadastroreceita_icon_olho"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:importantForAccessibility="no"
+            android:tint="#989898"
+            app:layout_constraintBottom_toBottomOf="@+id/cadastroreceita_campo_06"
+            app:layout_constraintEnd_toEndOf="@+id/cadastroreceita_icon_tempo"
+            app:layout_constraintStart_toStartOf="@+id/cadastroreceita_icon_tempo"
+            app:layout_constraintTop_toTopOf="@+id/cadastroreceita_campo_06"
+            app:srcCompat="@drawable/saborear_icon_olho"
+            tools:ignore="UseAppTint,ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/cadastroreceita_icon_finish"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginEnd="8dp"
+            android:importantForAccessibility="no"
+            android:tint="#989898"
+            app:layout_constraintBottom_toBottomOf="@+id/cadastroreceita_campo_05"
+            app:layout_constraintEnd_toEndOf="@+id/cadastroreceita_campo_05"
+            app:layout_constraintTop_toTopOf="@+id/cadastroreceita_campo_05"
+            app:srcCompat="@drawable/saborear_icon_delete"
+            tools:ignore="UseAppTint,ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/cadastroreceita_icon_finish_02"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginEnd="8dp"
+            android:importantForAccessibility="no"
+            android:tint="#989898"
+            app:layout_constraintBottom_toBottomOf="@+id/cadastroreceita_campo_02"
+            app:layout_constraintEnd_toEndOf="@+id/cadastroreceita_campo_02"
+            app:layout_constraintTop_toTopOf="@+id/cadastroreceita_campo_02"
+            app:srcCompat="@drawable/saborear_icon_delete"
+            tools:ignore="UseAppTint,ImageContrastCheck" />
+
+        <EditText
+            android:id="@+id/cadastroreceita_insert_01"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="8dp"
+            android:background="#00FFFFFF"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="Título da receita"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:maxLength="30"
+            android:textColor="#000000"
+            android:textColorHint="#4D000000"
+            app:layout_constraintBottom_toBottomOf="@+id/cadastroreceita_campo_01"
+            app:layout_constraintEnd_toEndOf="@+id/cadastroreceita_campo_01"
+            app:layout_constraintStart_toEndOf="@+id/cadastroreceita_icon_titulo"
+            app:layout_constraintTop_toTopOf="@+id/cadastroreceita_campo_01"
+            tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/cadastroreceita_insert_02"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="8dp"
+            android:background="#00FFFFFF"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="Tempo de preparo (minutos)"
+            android:importantForAutofill="no"
+            android:inputType="number|numberDecimal"
+            android:maxLength="3"
+            android:textColor="#000000"
+            android:textColorHint="#4D000000"
+            app:layout_constraintBottom_toBottomOf="@+id/cadastroreceita_campo_03"
+            app:layout_constraintEnd_toEndOf="@+id/cadastroreceita_campo_03"
+            app:layout_constraintStart_toEndOf="@+id/cadastroreceita_icon_tempo"
+            app:layout_constraintTop_toTopOf="@+id/cadastroreceita_campo_03"
+            tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/cadastroreceita_insert_03"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#00FFFFFF"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:gravity="start|top"
+            android:hint="@string/digite_aqui"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            android:lines="15"
+            android:maxLength="1000"
+            android:singleLine="false"
+            app:layout_constraintBottom_toBottomOf="@+id/cadastroreceita_campo_04"
+            app:layout_constraintEnd_toEndOf="@+id/cadastroreceita_campo_04"
+            app:layout_constraintStart_toEndOf="@+id/cadastroreceita_icon_modo"
+            app:layout_constraintTop_toTopOf="@+id/cadastroreceita_campo_04"
+            tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+        <Spinner
+            android:id="@+id/cadastroreceita_categoria"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="#00FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@+id/cadastroreceita_campo_02"
+            app:layout_constraintEnd_toStartOf="@+id/cadastroreceita_icon_finish_02"
+            app:layout_constraintStart_toEndOf="@+id/cadastroreceita_icon_categoria"
+            app:layout_constraintTop_toTopOf="@+id/cadastroreceita_campo_02"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Spinner
+            android:id="@+id/cadastroreceita_visibilidade"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="8dp"
+            android:background="#00FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@+id/cadastroreceita_campo_06"
+            app:layout_constraintEnd_toEndOf="@+id/cadastroreceita_campo_06"
+            app:layout_constraintStart_toEndOf="@+id/cadastroreceita_icon_olho"
+            app:layout_constraintTop_toTopOf="@+id/cadastroreceita_campo_06"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/cadastroreceita_btn_imagem"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#00FFFFFF"
+            android:fontFamily="sans-serif"
+            android:gravity="center|start"
+            android:importantForAccessibility="no"
+            android:text="@string/imagem"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/cadastroreceita_campo_05"
+            app:layout_constraintEnd_toStartOf="@+id/cadastroreceita_icon_finish"
+            app:layout_constraintStart_toEndOf="@+id/cadastroreceita_icon_imagem"
+            app:layout_constraintTop_toTopOf="@+id/cadastroreceita_campo_05"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/cadastroreceita_btn_chatingredientes"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="#00FFFFFF"
+            android:fontFamily="sans-serif"
+            android:gravity="center|start"
+            android:importantForAccessibility="no"
+            android:text="@string/clique_para_adicionar_com_chatbot"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/cadastroreceita_campo_07"
+            app:layout_constraintEnd_toEndOf="@+id/cadastroreceita_campo_07"
+            app:layout_constraintStart_toEndOf="@+id/cadastroreceita_icon_chat"
+            app:layout_constraintTop_toTopOf="@+id/cadastroreceita_campo_07"
+            tools:ignore="TouchTargetSizeCheck,VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/cadastroreceita_btn_addingrediente"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="#00FFFFFF"
+            android:fontFamily="sans-serif"
+            android:gravity="center|start"
+            android:importantForAccessibility="no"
+            android:text="@string/adicionar_ingrediente"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/cadastroreceita_campo_08"
+            app:layout_constraintEnd_toEndOf="@+id/cadastroreceita_campo_08"
+            app:layout_constraintStart_toEndOf="@+id/cadastroreceita_icon_lanche"
+            app:layout_constraintTop_toTopOf="@+id/cadastroreceita_campo_08"
+            tools:ignore="TouchTargetSizeCheck,VisualLintButtonSize" />
+
+        <ImageButton
+            android:id="@+id/cadastroreceita_btn_salvar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="#00FFFFFF"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toTopOf="@+id/cadastroreceita_btn_pesquisar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/saborear_btn_save"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/cadastroreceita_btn_addchatbot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#00FFFFFF"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toTopOf="@+id/cadastroreceita_btn_salvar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cadastroreceita_campo_05"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/saborear_btn_chat"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/cadastroreceita_btn_deletar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="#00FFFFFF"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toTopOf="@+id/cadastroreceita_btn_pesquisar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/saborear_btn_delete"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/cadastroreceita_btn_criar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/cadastroreceita_btn_pesquisar"
+            app:layout_constraintEnd_toEndOf="@+id/cadastroreceita_btn_addchatbot"
+            app:layout_constraintStart_toStartOf="@+id/cadastroreceita_btn_addchatbot"
+            app:srcCompat="@drawable/saborear_criar"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/cadastroreceita_btn_salvar3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/cadastroreceita_btn_pesquisar"
+            app:layout_constraintEnd_toEndOf="@+id/cadastroreceita_btn_addchatbot"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="@+id/cadastroreceita_btn_addchatbot"
+            app:srcCompat="@drawable/saborear_btn_save"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+        <ProgressBar
+            android:id="@+id/cadastroreceita_carregar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="#000000"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/cadastroreceita_listview_ingredientes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/cadastroreceita_listview_ingredientes" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

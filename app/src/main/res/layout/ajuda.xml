@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ajuda_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ajuda_imagem_perfil"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="96dp"
+        app:civ_border_color="#FF000000"
+        app:civ_border_overlay="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/saborear_icon_foto"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/ajudar_linha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ajuda_imagem_perfil"
+        app:srcCompat="@drawable/saborear_linha"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/ajuda_txt_telefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/alata"
+        app:layout_constraintStart_toStartOf="@+id/ajuda_txt_nome"
+        app:layout_constraintTop_toBottomOf="@+id/ajuda_txt_nome" />
+
+    <TextView
+        android:id="@+id/ajuda_txt_nome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="70dp"
+        android:fontFamily="@font/alata"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/ajuda_imagem_perfil"
+        app:layout_constraintTop_toTopOf="@+id/ajuda_imagem_perfil" />
+
+    <ImageButton
+        android:id="@+id/ajuda_btn_perguntas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:minHeight="48dp"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ajuda_btn_contato"
+        app:srcCompat="@drawable/saborear_btn_perguntas"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/ajuda_btn_sobre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:minHeight="48dp"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ajudar_linha"
+        app:srcCompat="@drawable/saborear_btn_sobre"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/ajuda_btn_contato"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:minHeight="48dp"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ajuda_btn_sobre"
+        app:srcCompat="@drawable/saborear_btn_contato"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/ajuda_btn_termos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:minHeight="48dp"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ajuda_btn_perguntas"
+        app:srcCompat="@drawable/saborear_btn_termos"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/ajuda_btn_voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/saborear_voltar_ajuda"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/ajuda_btn_pesquisar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ajuda_btn_perfil"
+        app:layout_constraintStart_toEndOf="@+id/ajuda_btn_home"
+        app:srcCompat="@drawable/saborear_icon_lupa" />
+
+    <ImageButton
+        android:id="@+id/ajuda_btn_home"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:windowSoftInputMode="adjustPan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/saborear_icon_home" />
+
+    <ImageButton
+        android:id="@+id/ajuda_btn_perfil"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/saborear_icon_perfil" />
+
+    <ImageButton
+        android:id="@+id/ajuda_btn_notificacao"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:windowSoftInputMode="adjustPan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ajuda_btn_back"
+        app:layout_constraintStart_toEndOf="@+id/ajuda_btn_perfil"
+        app:srcCompat="@drawable/saborear_icon_notificacao" />
+
+    <ImageButton
+        android:id="@+id/ajuda_btn_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:windowSoftInputMode="adjustPan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/saborear_voltar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

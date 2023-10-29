@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/main_banner"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="16dp"
+            android:scrollbars="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_listview_01"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/main_titulo_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/alata"
+            android:text="@string/melhores_avalia_es"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/main_titulo_03"
+            app:layout_constraintTop_toBottomOf="@+id/main_banner"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/main_titulo_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/alata"
+            android:text="@string/nossas_sugest_es"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_listview_03" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/main_listview_01"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:scrollbars="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/main_listview_02"
+            android:layout_width="0dp"
+            android:layout_height="195dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:scrollbars="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_titulo_02"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/main_listview_03"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="8dp"
+            android:scrollbars="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_listview_02"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/main_listview_04"
+            android:layout_width="0dp"
+            android:layout_height="195dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:scrollbars="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/main_btn_criar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_titulo_03"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/main_btn_pesquisar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/main_btn_perfil"
+            app:layout_constraintStart_toEndOf="@+id/main_btn_home"
+            app:srcCompat="@drawable/saborear_icon_lupa" />
+
+        <ImageButton
+            android:id="@+id/main_btn_home"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:windowSoftInputMode="adjustPan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/saborear_icon_home" />
+
+        <ImageButton
+            android:id="@+id/main_btn_perfil"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/saborear_icon_perfil" />
+
+        <ImageButton
+            android:id="@+id/main_btn_notificacao"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:windowSoftInputMode="adjustPan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/main_btn_back"
+            app:layout_constraintStart_toEndOf="@+id/main_btn_perfil"
+            app:srcCompat="@drawable/saborear_icon_notificacao" />
+
+        <ImageButton
+            android:id="@+id/main_btn_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:windowSoftInputMode="adjustPan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/saborear_voltar" />
+
+        <ImageButton
+            android:id="@+id/main_btn_criar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:background="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/main_btn_pesquisar"
+            app:layout_constraintEnd_toEndOf="@+id/main_btn_perfil"
+            app:layout_constraintStart_toStartOf="@+id/main_btn_perfil"
+            app:srcCompat="@drawable/saborear_btn_add"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <ProgressBar
+            android:id="@+id/main_carregar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="32dp"
+            android:layout_height="0dp"
+            android:indeterminateTint="#000000"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/main_btn_criar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/main_listview_02" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

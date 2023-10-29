@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/comentario_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ProgressBar
+        android:id="@+id/comentario_carregar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="32dp"
+        android:layout_height="0dp"
+        android:indeterminateTint="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/receita_listview_nutricional"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/receita_listview_nutricional"
+        app:layout_constraintTop_toTopOf="@+id/receita_listview_nutricional" />
+
+    <ListView
+        android:id="@+id/receita_listview_nutricional"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00FFFFFF"
+        android:cacheColorHint="#00FFFFFF"
+        android:divider="@color/white"
+        android:dividerHeight="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/comentario_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comentario_btn_voltar" />
+
+    <ImageButton
+        android:id="@+id/comentario_btn_voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/saborear_voltar_comentarios" />
+
+    <ImageButton
+        android:id="@+id/comentario_btn_pesquisar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/comentario_btn_perfil"
+        app:layout_constraintStart_toEndOf="@+id/comentario_btn_home"
+        app:srcCompat="@drawable/saborear_icon_lupa" />
+
+    <ImageButton
+        android:id="@+id/comentario_btn_home"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:windowSoftInputMode="adjustPan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/saborear_icon_home" />
+
+    <ImageButton
+        android:id="@+id/comentario_btn_perfil"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/saborear_icon_perfil" />
+
+    <ImageButton
+        android:id="@+id/comentario_btn_notificacao"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:windowSoftInputMode="adjustPan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/comentario_btn_back"
+        app:layout_constraintStart_toEndOf="@+id/comentario_btn_perfil"
+        app:srcCompat="@drawable/saborear_icon_notificacao" />
+
+    <ImageButton
+        android:id="@+id/comentario_btn_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:windowSoftInputMode="adjustPan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/saborear_voltar" />
+
+    <ImageView
+        android:id="@+id/comentario_box"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toTopOf="@+id/comentario_btn_pesquisar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/saborear_campo_07"
+        tools:ignore="ImageContrastCheck" />
+
+    <EditText
+        android:id="@+id/comentario_insert"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#00FFFFFF"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/digite_aqui"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:maxLength="200"
+        android:maxLines="10"
+        android:singleLine="false"
+        app:layout_constraintBottom_toBottomOf="@+id/comentario_box"
+        app:layout_constraintEnd_toStartOf="@+id/comentario_btn_enviar"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/comentario_box"
+        app:layout_constraintTop_toTopOf="@+id/comentario_box"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/comentario_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_0_500"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/comentario_box"
+        app:layout_constraintEnd_toEndOf="@+id/comentario_box" />
+
+    <ImageButton
+        android:id="@+id/comentario_btn_enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/comentario_box"
+        app:layout_constraintEnd_toEndOf="@+id/comentario_box"
+        app:srcCompat="@drawable/saborear_btn_enviar" />
+
+    <ImageButton
+        android:id="@+id/comentario_sem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/comentario_carregar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/receita_listview_nutricional"
+        app:srcCompat="@drawable/saborear_semreceita"
+        tools:ignore="TouchTargetSizeCheck,ImageContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

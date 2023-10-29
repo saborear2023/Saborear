@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/subguiaingredientes_campo"
+        android:layout_width="0dp"
+        android:layout_height="510dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/saborear_campo_12"
+        tools:ignore="ImageContrastCheck" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/subguiaingredientes_receitas"
+        android:layout_width="0dp"
+        android:layout_height="195dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:scrollbars="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/subguiaingredientes_campo"
+        app:layout_constraintStart_toStartOf="@+id/subguiaingredientes_campo"
+        app:layout_constraintTop_toBottomOf="@+id/subguiaingredientes_txt"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/subguiaingredientes_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/alata"
+        android:isScrollContainer="true"
+        android:scrollbars="vertical"
+        android:text="@string/esse_ingrediente_usado_em_receitas_como"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/subguiaingredientes_campo"
+        app:layout_constraintStart_toStartOf="@+id/subguiaingredientes_campo"
+        app:layout_constraintTop_toBottomOf="@+id/subguiaingredientes_nutricional" />
+
+    <TextView
+        android:id="@+id/subguiaingredientes_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/alata"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/subguiaingredientes_campo"
+        app:layout_constraintTop_toTopOf="@+id/subguiaingredientes_campo" />
+
+    <ListView
+        android:id="@+id/subguiaingredientes_nutricional"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00FFFFFF"
+        android:cacheColorHint="#00FFFFFF"
+        android:divider="#00FFFFFF"
+        android:dividerHeight="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/subguiaingredientes_campo"
+        app:layout_constraintStart_toStartOf="@+id/subguiaingredientes_campo"
+        app:layout_constraintTop_toBottomOf="@+id/subguiaingredientes_nome"
+        tools:ignore="NestedScrolling" />
+
+    <ImageButton
+        android:id="@+id/subguiaingredientes_sem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/subguiaingredientes_receitas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/subguiaingredientes_receitas"
+        app:srcCompat="@drawable/saborear_semreceita"
+        tools:ignore="TouchTargetSizeCheck,ImageContrastCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

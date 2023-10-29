@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/subcomentario_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:importantForAccessibility="no">
+
+    <ImageView
+        android:id="@+id/subcomentario_foto"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="32dp"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/subcomentario_nome"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/subcomentario_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/subcomentario_foto"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subcomentario_ponto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/string_ponto"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/subcomentario_nome"
+        app:layout_constraintStart_toEndOf="@+id/subcomentario_nome"
+        app:layout_constraintTop_toTopOf="@+id/subcomentario_nome"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/subcomentario_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/subcomentario_nome"
+        app:layout_constraintStart_toEndOf="@+id/subcomentario_ponto"
+        app:layout_constraintTop_toTopOf="@+id/subcomentario_nome"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/subcomentario_texto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/alata"
+        android:importantForAccessibility="no"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine|text"
+        android:maxLength="200"
+        android:maxLines="10"
+        android:singleLine="false"
+        android:textColor="#606060"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/subcomentario_nome"
+        app:layout_constraintTop_toBottomOf="@+id/subcomentario_nome"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/subcomentario_linha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subcomentario_texto"
+        app:srcCompat="@drawable/saborear_linha"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/subcomentario_deletar"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/subcomentario_linha"
+        app:layout_constraintTop_toTopOf="@+id/subcomentario_foto"
+        app:srcCompat="@drawable/saborear_icon_delete"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/subcomentario_editar"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/subcomentario_deletar"
+        app:layout_constraintTop_toTopOf="@+id/subcomentario_foto"
+        app:srcCompat="@drawable/saborear_btn_editar"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/subcomentario_salvar"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/subcomentario_editar"
+        app:layout_constraintTop_toTopOf="@+id/subcomentario_foto"
+        app:srcCompat="@drawable/saborear_btn_feito"
+        tools:ignore="TouchTargetSizeCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editarperfil_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/editarperfil_imagem_perfil"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/saborear_icon_foto"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/perfil_box_nome"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        android:tintMode="src_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editarperfil_imagem_perfil"
+        app:srcCompat="@drawable/saborear_campo_08"
+        app:tint="#40D9D9D9"
+        tools:ignore="UseAppTint,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/perfil_box_telefone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        android:tintMode="src_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/perfil_box_nome"
+        app:srcCompat="@drawable/saborear_campo_01"
+        app:tint="#40D9D9D9"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/perfil_box_senha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        android:tintMode="src_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/perfil_box_telefone"
+        app:srcCompat="@drawable/saborear_campo_01"
+        app:tint="#40D9D9D9"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/perfil_box_confirmar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        android:tintMode="src_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/perfil_box_senha"
+        app:srcCompat="@drawable/saborear_campo_01"
+        app:tint="#40D9D9D9"
+        tools:ignore="ImageContrastCheck" />
+
+    <EditText
+        android:id="@+id/perfil_insert_nome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="#00FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:hint="@string/coloque_como_gostaria_de_ser_chamado"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:maxLength="30"
+        app:layout_constraintBottom_toBottomOf="@+id/perfil_box_nome"
+        app:layout_constraintEnd_toEndOf="@+id/perfil_box_nome"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@+id/perfil_box_nome"
+        app:layout_constraintTop_toTopOf="@+id/perfil_box_nome"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/perfil_insert_telefone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="#00FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:hint="@string/coloque_seu_n_mero_de_telefone"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:maxLength="11"
+        app:layout_constraintBottom_toBottomOf="@+id/perfil_box_telefone"
+        app:layout_constraintEnd_toEndOf="@+id/perfil_box_telefone"
+        app:layout_constraintStart_toStartOf="@+id/perfil_box_telefone"
+        app:layout_constraintTop_toTopOf="@+id/perfil_box_telefone"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/perfil_insert_senha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="#00FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:hint="@string/coloque_sua_nova_senha"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:maxLines="30"
+        app:layout_constraintBottom_toBottomOf="@+id/perfil_box_senha"
+        app:layout_constraintEnd_toEndOf="@+id/perfil_box_senha"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@+id/perfil_box_senha"
+        app:layout_constraintTop_toTopOf="@+id/perfil_box_senha"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/perfil_insert_confirmar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="#00FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:hint="@string/confirme_a_sua_nova_senha"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:maxLength="30"
+        app:layout_constraintBottom_toBottomOf="@+id/perfil_box_confirmar"
+        app:layout_constraintEnd_toEndOf="@+id/perfil_box_confirmar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/perfil_box_confirmar"
+        app:layout_constraintTop_toTopOf="@+id/perfil_box_confirmar"
+        app:layout_constraintVertical_bias="0.444"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck,VisualLintTextFieldSize" />
+
+    <ImageView
+        android:id="@+id/perfil_icon_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/perfil_box_nome"
+        app:layout_constraintEnd_toEndOf="@+id/perfil_box_nome"
+        app:layout_constraintStart_toEndOf="@+id/perfil_insert_nome"
+        app:layout_constraintTop_toTopOf="@+id/perfil_box_nome"
+        app:srcCompat="@drawable/saborear_icon_perfil"
+        app:tint="#80000000" />
+
+    <ImageView
+        android:id="@+id/perfil_icon_telefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/perfil_box_telefone"
+        app:layout_constraintEnd_toEndOf="@+id/perfil_box_telefone"
+        app:layout_constraintStart_toEndOf="@+id/perfil_insert_telefone"
+        app:layout_constraintTop_toTopOf="@+id/perfil_box_telefone"
+        app:layout_constraintVertical_bias="0.6"
+        app:srcCompat="@drawable/saborear_icon_celular" />
+
+    <ImageView
+        android:id="@+id/perfil_icon_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/perfil_box_senha"
+        app:layout_constraintEnd_toEndOf="@+id/perfil_box_senha"
+        app:layout_constraintStart_toEndOf="@+id/perfil_insert_senha"
+        app:layout_constraintTop_toTopOf="@+id/perfil_box_senha"
+        app:srcCompat="@drawable/saborear_icon_senha" />
+
+    <ImageView
+        android:id="@+id/perfil_icon_confirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/perfil_box_confirmar"
+        app:layout_constraintEnd_toEndOf="@+id/perfil_box_confirmar"
+        app:layout_constraintStart_toEndOf="@+id/perfil_insert_confirmar"
+        app:layout_constraintTop_toTopOf="@+id/perfil_box_confirmar"
+        app:srcCompat="@drawable/saborear_icon_senha" />
+
+    <TextView
+        android:id="@+id/editarperfil_txt_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alata"
+        android:text="@string/nome"
+        app:layout_constraintBottom_toTopOf="@+id/perfil_box_nome"
+        app:layout_constraintStart_toStartOf="@+id/perfil_box_nome" />
+
+    <TextView
+        android:id="@+id/editarperfil_txt_telefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alata"
+        android:text="@string/telefone"
+        app:layout_constraintBottom_toTopOf="@+id/perfil_box_telefone"
+        app:layout_constraintStart_toStartOf="@+id/perfil_box_telefone" />
+
+    <TextView
+        android:id="@+id/perfil_txt_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alata"
+        android:text="@string/senha"
+        app:layout_constraintBottom_toTopOf="@+id/perfil_box_senha"
+        app:layout_constraintStart_toStartOf="@+id/perfil_box_senha" />
+
+    <TextView
+        android:id="@+id/perfil_txt_confirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alata"
+        android:text="@string/confirme_a_senha"
+        app:layout_constraintBottom_toTopOf="@+id/perfil_box_confirmar"
+        app:layout_constraintStart_toStartOf="@+id/perfil_box_confirmar" />
+
+    <ImageButton
+        android:id="@+id/editarperfil_btn_voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/saborear_voltar_perfil"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/editarperfil_btn_editar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/editarperfil_imagem_perfil"
+        app:layout_constraintEnd_toEndOf="@+id/editarperfil_imagem_perfil"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editarperfil_imagem_perfil"
+        app:layout_constraintTop_toTopOf="@+id/editarperfil_imagem_perfil"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/saborear_icon_editar"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/perfil_btn_salvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toTopOf="@+id/editarperfil_btn_deletar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editarperfil_checkbox"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/saborear_btn_salvar_02"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/editarperfil_btn_pesquisar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editarperfil_btn_perfil"
+        app:layout_constraintStart_toEndOf="@+id/editarperfil_btn_home"
+        app:srcCompat="@drawable/saborear_icon_lupa" />
+
+    <ImageButton
+        android:id="@+id/editarperfil_btn_home"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:windowSoftInputMode="adjustPan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/saborear_icon_home" />
+
+    <ImageButton
+        android:id="@+id/editarperfil_btn_perfil"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/saborear_icon_perfil" />
+
+    <ImageButton
+        android:id="@+id/editarperfil_btn_notificacao"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:windowSoftInputMode="adjustPan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editarperfil_btn_back"
+        app:layout_constraintStart_toEndOf="@+id/editarperfil_btn_perfil"
+        app:srcCompat="@drawable/saborear_icon_notificacao" />
+
+    <ImageButton
+        android:id="@+id/editarperfil_btn_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:windowSoftInputMode="adjustPan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/saborear_voltar" />
+
+    <Button
+        android:id="@+id/editarperfil_btn_deletar"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginBottom="16dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/alata"
+        android:text="@string/deletar_conta"
+        android:textAllCaps="false"
+        android:textColor="#FF0000"
+        android:textSize="14sp"
+        android:translationZ="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/editarperfil_btn_pesquisar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextSizeCheck" />
+
+    <ImageView
+        android:id="@+id/editarperfil_box_editar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        android:tintMode="src_in"
+        android:translationZ="10dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/saborear_box_02"
+        app:tint="#D9000000"
+        tools:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/editarperfil_btn_galeria"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        android:translationZ="15dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editarperfil_box_titulo"
+        app:srcCompat="@drawable/saborear_btn_galeria"
+        app:tint="#FFFFFF"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/editarperfil_btn_tirar"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        android:translationZ="15dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/editarperfil_btn_galeria"
+        app:layout_constraintStart_toStartOf="@+id/editarperfil_btn_galeria"
+        app:layout_constraintTop_toBottomOf="@+id/editarperfil_btn_galeria"
+        app:srcCompat="@drawable/saborear_btn_tirarfoto"
+        app:tint="#FFFFFF"
+        tools:ignore="TouchTargetSizeCheck"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/editarperfil_box_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:importantForAccessibility="no"
+        android:translationZ="20dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/editarperfil_btn_galeria"
+        app:layout_constraintStart_toStartOf="@+id/editarperfil_btn_galeria"
+        app:layout_constraintTop_toTopOf="@+id/editarperfil_box_editar"
+        app:srcCompat="@drawable/saborear_selecionarfoto"
+        tools:visibility="invisible" />
+
+    <ProgressBar
+        android:id="@+id/editarperfil_carregar_dados"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:indeterminateTint="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/perfil_box_confirmar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/perfil_box_nome" />
+
+    <CheckBox
+        android:id="@+id/editarperfil_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:buttonTint="#1BAB4A"
+        android:text="@string/modo_escuro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/perfil_box_confirmar"
+        app:layout_constraintTop_toBottomOf="@+id/perfil_box_confirmar"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

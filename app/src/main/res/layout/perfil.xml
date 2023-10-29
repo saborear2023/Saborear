@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/perfil_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/perfil_imagem_perfil"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="96dp"
+        app:civ_border_color="#FF000000"
+        app:civ_border_overlay="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/saborear_icon_foto"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/perfil_txt_nome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="70dp"
+        android:fontFamily="@font/alata"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/perfil_imagem_perfil"
+        app:layout_constraintTop_toTopOf="@+id/perfil_imagem_perfil" />
+
+    <TextView
+        android:id="@+id/perfil_txt_telefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/alata"
+        app:layout_constraintStart_toStartOf="@+id/perfil_txt_nome"
+        app:layout_constraintTop_toBottomOf="@+id/perfil_txt_nome" />
+
+    <ImageView
+        android:id="@+id/perfil_linha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/perfil_imagem_perfil"
+        app:srcCompat="@drawable/saborear_linha"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/perfil_btn_pesquisar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/perfil_btn_perfil"
+        app:layout_constraintStart_toEndOf="@+id/perfil_btn_home"
+        app:srcCompat="@drawable/saborear_icon_lupa" />
+
+    <ImageButton
+        android:id="@+id/perfil_btn_home"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:windowSoftInputMode="adjustPan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/saborear_icon_home" />
+
+    <ImageButton
+        android:id="@+id/perfil_btn_perfil"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/saborear_icon_perfil" />
+
+    <ImageButton
+        android:id="@+id/perfil_btn_notificacao"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:windowSoftInputMode="adjustPan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/perfil_btn_back"
+        app:layout_constraintStart_toEndOf="@+id/perfil_btn_perfil"
+        app:srcCompat="@drawable/saborear_icon_notificacao" />
+
+    <ImageButton
+        android:id="@+id/perfil_btn_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:windowSoftInputMode="adjustPan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/saborear_voltar" />
+
+    <ImageButton
+        android:id="@+id/perfil_btn_voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/saborear_voltar_perfil"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/perfil_btn_editar"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#009E2A2A"
+        android:importantForAccessibility="no"
+        android:minWidth="48dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/perfil_txt_nome"
+        app:layout_constraintEnd_toEndOf="@+id/perfil_linha"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/perfil_txt_nome"
+        app:layout_constraintTop_toTopOf="@+id/perfil_txt_nome"
+        app:srcCompat="@drawable/saborear_btn_editar"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/perfil_btn_favoritas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:minHeight="48dp"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/perfil_linha"
+        app:srcCompat="@drawable/saborear_btn_receitas" />
+
+    <ImageButton
+        android:id="@+id/perfil_btn_ajuda"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:minHeight="48dp"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/perfil_btn_favoritas"
+        app:srcCompat="@drawable/saborear_btn_ajuda" />
+
+    <ImageButton
+        android:id="@+id/perfil_btn_convidar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:minHeight="48dp"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/perfil_btn_ajuda"
+        app:srcCompat="@drawable/saborear_btn_convidar" />
+
+    <ImageButton
+        android:id="@+id/perfil_btn_minhas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:minHeight="48dp"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/perfil_btn_convidar"
+        app:srcCompat="@drawable/saborear_btn_minhas" />
+
+    <ImageButton
+        android:id="@+id/perfil_btn_creditos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:minHeight="48dp"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/perfil_btn_minhas"
+        app:srcCompat="@drawable/saborear_btn_creditos" />
+
+    <ImageButton
+        android:id="@+id/perfil_btn_sair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:minHeight="48dp"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="@+id/perfil_btn_minhas"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/perfil_btn_creditos"
+        app:srcCompat="@drawable/saborear_btn_sair" />
+
+    <ImageButton
+        android:id="@+id/perfil_btn_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:minHeight="48dp"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/perfil_btn_sair"
+        app:srcCompat="@drawable/saborear_btn_admin"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/perfil_box_sair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        android:tintMode="src_in"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/saborear_box_02"
+        app:tint="#D9000000"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/perfil_txt_sair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/alata"
+        android:text="@string/sair_da_sua_conta"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:translationZ="15dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/perfil_box_sair"
+        app:layout_constraintStart_toStartOf="@+id/perfil_box_sair"
+        app:layout_constraintTop_toTopOf="@+id/perfil_box_sair"
+        tools:ignore="TextContrastCheck"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/perfil_btn_confirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#00FFFFFF"
+        android:text="@string/sair"
+        android:textAllCaps="false"
+        android:textColor="#FF0000"
+        android:textSize="24sp"
+        android:translationZ="15dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/perfil_txt_sair"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/perfil_btn_cancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#00FFFFFF"
+        android:text="@string/cancelar"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:translationZ="15dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/perfil_btn_confirmar"
+        tools:visibility="invisible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

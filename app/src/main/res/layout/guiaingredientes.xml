@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/guiaingredientes_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/guiaingredientes_icon_filtros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guiaingredientes_btn_voltar"
+        app:srcCompat="@drawable/saborear_btn_filtros" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/guiaingredientes_listview_filtros"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:maxHeight="48dp"
+        android:scrollbars="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/guiaingredientes_icon_filtros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guiaingredientes_icon_filtros"
+        app:layout_constraintTop_toTopOf="@+id/guiaingredientes_icon_filtros"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/guiaingredientes_campo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/guiaingredientes_btn_voltar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/guiaingredientes_btn_voltar"
+        app:layout_constraintTop_toTopOf="@+id/guiaingredientes_btn_voltar"
+        app:srcCompat="@drawable/saborear_campo_04"
+        tools:ignore="ImageContrastCheck" />
+
+    <ListView
+        android:id="@+id/guiaingredientes_listview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00FFFFFF"
+        android:cacheColorHint="#00FFFFFF"
+        android:divider="#00FFFFFF"
+        android:dividerHeight="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/guiaingredientes_btn_pesquisar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guiaingredientes_icon_ordenar" />
+
+    <ImageButton
+        android:id="@+id/guiaingredientes_btn_voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/saborear_icon_voltar"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/guiaingredientes_btn_pesquisar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guiaingredientes_btn_perfil"
+        app:layout_constraintStart_toEndOf="@+id/guiaingredientes_btn_home"
+        app:srcCompat="@drawable/saborear_icon_lupa" />
+
+    <ImageButton
+        android:id="@+id/guiaingredientes_btn_home"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:windowSoftInputMode="adjustPan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/saborear_icon_home" />
+
+    <ImageButton
+        android:id="@+id/guiaingredientes_btn_perfil"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/saborear_icon_perfil" />
+
+    <ImageButton
+        android:id="@+id/guiaingredientes_btn_notificacao"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:windowSoftInputMode="adjustPan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guiaingredientes_btn_back"
+        app:layout_constraintStart_toEndOf="@+id/guiaingredientes_btn_perfil"
+        app:srcCompat="@drawable/saborear_icon_notificacao" />
+
+    <ImageButton
+        android:id="@+id/guiaingredientes_btn_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:windowSoftInputMode="adjustPan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/saborear_voltar" />
+
+    <EditText
+        android:id="@+id/guiaingredientes_insert"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="38dp"
+        android:background="#00FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:hint="@string/pesquisar_por_nome"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/guiaingredientes_campo"
+        app:layout_constraintEnd_toEndOf="@+id/guiaingredientes_campo"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/guiaingredientes_btn_voltar"
+        app:layout_constraintTop_toTopOf="@+id/guiaingredientes_campo"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/guiaingredientes_btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/guiaingredientes_campo"
+        app:layout_constraintEnd_toEndOf="@+id/guiaingredientes_campo"
+        app:layout_constraintTop_toTopOf="@+id/guiaingredientes_campo"
+        app:srcCompat="@drawable/saborear_icon_delete"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/guiaingredientes_ordenar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:scrollbars="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/guiaingredientes_icon_ordenar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guiaingredientes_icon_ordenar"
+        app:layout_constraintTop_toTopOf="@+id/guiaingredientes_icon_ordenar"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/guiaingredientes_icon_ordenar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guiaingredientes_icon_filtros"
+        app:srcCompat="@drawable/saborear_btn_ordenar"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/guiaingredientes_sem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/guiaingredientes_listview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guiaingredientes_listview"
+        app:srcCompat="@drawable/saborear_semingredientes"
+        tools:ignore="TouchTargetSizeCheck,ImageContrastCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

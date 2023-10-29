@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/receita_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <ListView
+            android:id="@+id/receita_listview_nutricional"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#00FFFFFF"
+            android:backgroundTint="#00FFFFFF"
+            android:cacheColorHint="#00FFFFFF"
+            android:divider="#00FFFFFF"
+            android:dividerHeight="16dp"
+            android:scrollbars="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/receita_btn_nutricional"
+            tools:ignore="NestedScrolling" />
+
+        <ImageView
+            android:id="@+id/receita_imagem"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:importantForAccessibility="no"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/receita_filtro"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:importantForAccessibility="no"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="@+id/receita_imagem"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/saborear_filtro"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/receita_btn_voltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:background="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/saborear_voltar_branco"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/receita_nome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/alata"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@+id/receita_icon_tempo"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/receita_autor" />
+
+        <TextView
+            android:id="@+id/receita_autor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/alata"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/receita_icon_tempo"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/receita_imagem" />
+
+        <TextView
+            android:id="@+id/receita_tempo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/alata"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/receita_nome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/receita_nome" />
+
+        <TextView
+            android:id="@+id/receita_nota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alata"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/receita_nome"
+            app:layout_constraintTop_toBottomOf="@+id/receita_nome" />
+
+        <ImageView
+            android:id="@+id/receita_icon_tempo"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="@+id/receita_tempo"
+            app:layout_constraintEnd_toStartOf="@+id/receita_tempo"
+            app:layout_constraintTop_toTopOf="@+id/receita_tempo"
+            app:srcCompat="@drawable/saborear_icon_tempo" />
+
+        <ImageView
+            android:id="@+id/receita_estrela_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="@+id/receita_nota"
+            app:layout_constraintStart_toEndOf="@+id/receita_nota"
+            app:layout_constraintTop_toTopOf="@+id/receita_nota"
+            app:srcCompat="@drawable/saborear_icon_estrela"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/receita_estrela_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="@+id/receita_estrela_01"
+            app:layout_constraintStart_toEndOf="@+id/receita_estrela_01"
+            app:layout_constraintTop_toTopOf="@+id/receita_estrela_01"
+            app:srcCompat="@drawable/saborear_icon_estrela"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/receita_estrela_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="@+id/receita_estrela_02"
+            app:layout_constraintStart_toEndOf="@+id/receita_estrela_02"
+            app:layout_constraintTop_toTopOf="@+id/receita_estrela_02"
+            app:srcCompat="@drawable/saborear_icon_estrela"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/receita_estrela_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="@+id/receita_estrela_03"
+            app:layout_constraintStart_toEndOf="@+id/receita_estrela_03"
+            app:layout_constraintTop_toTopOf="@+id/receita_estrela_03"
+            app:srcCompat="@drawable/saborear_icon_estrela"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/receita_estrela_05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="@+id/receita_estrela_04"
+            app:layout_constraintStart_toEndOf="@+id/receita_estrela_04"
+            app:layout_constraintTop_toTopOf="@+id/receita_estrela_04"
+            app:srcCompat="@drawable/saborear_icon_estrela"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/receita_btn_comentarios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="#00FFFFFF"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toTopOf="@+id/receita_press_01"
+            app:layout_constraintEnd_toEndOf="@+id/receita_press_05"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="@+id/receita_press_01"
+            app:layout_constraintTop_toBottomOf="@+id/receita_listview_nutricional"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/saborear_btn_comentario"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/receita_btn_mercado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="#00FFFFFF"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toTopOf="@+id/receita_press_01"
+            app:layout_constraintEnd_toEndOf="@+id/receita_press_05"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="@+id/receita_press_01"
+            app:layout_constraintTop_toBottomOf="@+id/receita_listview_nutricional"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/saborear_btn_mercado"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/receita_btn_ingredientes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="#00FFFFFF"
+            android:importantForAccessibility="no"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/receita_nota"
+            app:srcCompat="@drawable/saborear_btn_ingreddown"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/receita_btn_preparo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="#00FFFFFF"
+            android:importantForAccessibility="no"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/receita_txt_ingredientes"
+            app:srcCompat="@drawable/saborear_btn_preparodown"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/receita_btn_nutricional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="#00FFFFFF"
+            android:importantForAccessibility="no"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/receita_txt_preparo"
+            app:srcCompat="@drawable/saborear_btn_nutrientesdown"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/receita_press_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toTopOf="@+id/receita_btn_home"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/saborear_estrela_01"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/receita_press_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="@+id/receita_press_01"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/receita_press_01"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/saborear_estrela_02"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/receita_press_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="@+id/receita_press_02"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/receita_press_02"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/saborear_estrela_03"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/receita_press_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="@+id/receita_press_03"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/receita_press_03"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/saborear_estrela_04"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/receita_press_05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="@+id/receita_press_04"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/receita_press_04"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/saborear_estrela_05"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/receita_txt_ingredientes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/alata"
+            android:scrollbars="vertical"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/receita_btn_ingredientes"
+            tools:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/receita_txt_preparo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/alata"
+            android:isScrollContainer="true"
+            android:scrollbars="vertical"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/receita_btn_preparo"
+            tools:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/receita_btn_pesquisar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/receita_btn_perfil"
+            app:layout_constraintStart_toEndOf="@+id/receita_btn_home"
+            app:srcCompat="@drawable/saborear_icon_lupa" />
+
+        <ImageButton
+            android:id="@+id/receita_btn_home"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:windowSoftInputMode="adjustPan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/saborear_icon_home" />
+
+        <ImageButton
+            android:id="@+id/receita_btn_perfil"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/saborear_icon_perfil" />
+
+        <ImageButton
+            android:id="@+id/receita_btn_notificacao"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:windowSoftInputMode="adjustPan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/receita_btn_back"
+            app:layout_constraintStart_toEndOf="@+id/receita_btn_perfil"
+            app:srcCompat="@drawable/saborear_icon_notificacao" />
+
+        <ImageButton
+            android:id="@+id/receita_btn_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:windowSoftInputMode="adjustPan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/saborear_voltar" />
+
+        <ImageButton
+            android:id="@+id/receita_btn_curtir"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="16dp"
+            android:background="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="@+id/receita_tempo"
+            app:layout_constraintTop_toBottomOf="@+id/receita_tempo"
+            app:srcCompat="@drawable/saborear_btn_favorito_vazio"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/receita_btn_compartilhar"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toStartOf="@+id/receita_btn_curtir"
+            app:layout_constraintTop_toBottomOf="@+id/receita_tempo"
+            app:srcCompat="@drawable/saborear_btn_compartilhar"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <ProgressBar
+            android:id="@+id/receita_carregar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="32dp"
+            android:layout_height="0dp"
+            android:indeterminateTint="#000000"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/receita_btn_comentarios"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/receita_imagem"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageButton
+            android:id="@+id/receita_ingred_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:minHeight="48dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/receita_btn_ingredientes"
+            app:layout_constraintStart_toEndOf="@+id/receita_btn_ingredientes"
+            app:layout_constraintTop_toTopOf="@+id/receita_btn_ingredientes"
+            app:srcCompat="@drawable/saborear_icon_add"
+            tools:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/receita_ingred_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:minHeight="48dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/receita_btn_ingredientes"
+            app:layout_constraintStart_toEndOf="@+id/receita_ingred_add"
+            app:layout_constraintTop_toTopOf="@+id/receita_btn_ingredientes"
+            app:srcCompat="@drawable/saborear_icon_remover"
+            tools:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/receita_preparo_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/receita_btn_preparo"
+            app:layout_constraintStart_toEndOf="@+id/receita_btn_preparo"
+            app:layout_constraintTop_toTopOf="@+id/receita_btn_preparo"
+            app:srcCompat="@drawable/saborear_btn_editar"
+            tools:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/receita_receita_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="28dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:scaleType="fitXY"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/saborear_btn_editar"
+            app:tint="#FFFFFF"
+            tools:ignore="ImageContrastCheck"
+            tools:visibility="gone" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

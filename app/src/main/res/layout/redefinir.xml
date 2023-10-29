@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/redefinir_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/redefinir_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#1BAA4A"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/saborear_backgroundz" />
+
+    <ImageView
+        android:id="@+id/redefinir_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/saborear_logo_chapeu"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/redefinir_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alata"
+        android:text="@string/redefinir_minha_senha"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/redefinir_icon" />
+
+    <ImageView
+        android:id="@+id/redefinir_box_telefone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="32dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/redefinir_txt"
+        app:srcCompat="@drawable/saborear_campo_01"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/redefinir_box_codigo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/redefinir_box_telefone"
+        app:srcCompat="@drawable/saborear_campo_01"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/redefinir_box_senha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/redefinir_box_codigo"
+        app:srcCompat="@drawable/saborear_campo_01"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/redefinir_icon_telefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/redefinir_box_telefone"
+        app:layout_constraintStart_toStartOf="@+id/redefinir_box_telefone"
+        app:layout_constraintTop_toTopOf="@+id/redefinir_box_telefone"
+        app:srcCompat="@drawable/saborear_icon_email" />
+
+    <ImageView
+        android:id="@+id/redefinir_icon_codigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/redefinir_box_codigo"
+        app:layout_constraintStart_toStartOf="@+id/redefinir_box_codigo"
+        app:layout_constraintTop_toTopOf="@+id/redefinir_box_codigo"
+        app:srcCompat="@drawable/saborear_icon_senha" />
+
+    <ImageView
+        android:id="@+id/redefinir_icon_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/redefinir_box_senha"
+        app:layout_constraintStart_toStartOf="@+id/redefinir_box_senha"
+        app:layout_constraintTop_toTopOf="@+id/redefinir_box_senha"
+        app:srcCompat="@drawable/saborear_icon_senha" />
+
+    <EditText
+        android:id="@+id/redefinir_insert_telefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:hint="@string/telefone"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/redefinir_box_telefone"
+        app:layout_constraintEnd_toEndOf="@+id/redefinir_box_telefone"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/redefinir_icon_telefone"
+        app:layout_constraintTop_toTopOf="@+id/redefinir_box_telefone"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/redefinir_insert_codigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:hint="@string/c_digo"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:maxLength="6"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/redefinir_box_codigo"
+        app:layout_constraintEnd_toEndOf="@+id/redefinir_box_codigo"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/redefinir_icon_codigo"
+        app:layout_constraintTop_toTopOf="@+id/redefinir_box_codigo"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/redefinir_insert_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:hint="@string/senha"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:maxLength="30"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/redefinir_box_senha"
+        app:layout_constraintEnd_toEndOf="@+id/redefinir_box_senha"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/redefinir_icon_senha"
+        app:layout_constraintTop_toTopOf="@+id/redefinir_box_senha"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/redefinir_btn_salvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/redefinir_box_senha"
+        app:srcCompat="@drawable/saborear_btn_salvar"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/redefinir_btn_solicitar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/redefinir_btn_salvar"
+        app:srcCompat="@drawable/saborear_btn_solicitar"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/redefinir_btn_cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00FFFFFF"
+        android:fontFamily="@font/alata"
+        android:text="@string/cadastro"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/redefinir_btn_solicitar"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/redefinir_btn_entrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00FFFFFF"
+        android:fontFamily="@font/alata"
+        android:text="@string/entrar_em_uma_conta"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/redefinir_btn_cadastro"
+        tools:ignore="TextContrastCheck" />
+
+    <ProgressBar
+        android:id="@+id/redefinir_carregar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:indeterminateTint="#000000"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

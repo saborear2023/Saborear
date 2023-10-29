@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/admin_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false">
+
+        <ImageButton
+        android:id="@+id/admin_voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/saborear_voltar_admin"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/admin_campo_01"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        android:tint="#81F8F8F8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_cat_ingrediente"
+        app:srcCompat="@drawable/saborear_campo_08"
+        tools:ignore="UseAppTint,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/admin_campo_02"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        android:tint="#81F8F8F8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_cat_receita"
+        app:srcCompat="@drawable/saborear_campo_08"
+        tools:ignore="UseAppTint,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/admin_campo_03"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        android:tint="#81F8F8F8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_receita"
+        app:srcCompat="@drawable/saborear_campo_08"
+        tools:ignore="UseAppTint,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/admin_campo_04"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        android:tint="#81F8F8F8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_campo_03"
+        app:srcCompat="@drawable/saborear_campo_08"
+        tools:ignore="UseAppTint,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/admin_campo_05"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        android:tint="#81F8F8F8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_campo_01"
+        app:srcCompat="@drawable/saborear_campo_08"
+        tools:ignore="UseAppTint,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/admin_campo_06"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        android:tint="#81F8F8F8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_campo_02"
+        app:srcCompat="@drawable/saborear_campo_08"
+        tools:ignore="UseAppTint,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/admin_campo_07"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        android:tint="#81F8F8F8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_campo_04"
+        app:srcCompat="@drawable/saborear_campo_08"
+        tools:ignore="UseAppTint,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/admin_campo_08"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        android:tint="#81F8F8F8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_chatbot"
+        app:srcCompat="@drawable/saborear_campo_08"
+        tools:ignore="UseAppTint,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/admin_cat_ingrediente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/alata"
+        android:text="@string/categoria_de_ingrediente"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/admin_campo_01"
+        app:layout_constraintTop_toBottomOf="@+id/admin_voltar" />
+
+    <TextView
+        android:id="@+id/admin_cat_receita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/alata"
+        android:text="@string/categoria_de_receita"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/admin_campo_02"
+        app:layout_constraintTop_toBottomOf="@+id/admin_spinner_ingrediente" />
+
+    <TextView
+        android:id="@+id/admin_receita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/alata"
+        android:text="@string/admin_ingrediente"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/admin_campo_03"
+        app:layout_constraintTop_toBottomOf="@+id/admin_campo_06" />
+
+    <TextView
+        android:id="@+id/admin_chatbot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/alata"
+        android:text="@string/receitas_sem_o_chatbot"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/admin_campo_03"
+        app:layout_constraintTop_toBottomOf="@+id/admin_campo_07" />
+
+    <EditText
+        android:id="@+id/admin_insert_01"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#00FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:hint="Nome"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#4D000000"
+        app:layout_constraintBottom_toBottomOf="@+id/admin_campo_01"
+        app:layout_constraintEnd_toStartOf="@+id/admin_add_01"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@+id/admin_campo_01"
+        app:layout_constraintTop_toTopOf="@+id/admin_campo_01"
+        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/admin_insert_02"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#00FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:hint="@string/admin_nome"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#4D000000"
+        app:layout_constraintBottom_toBottomOf="@+id/admin_campo_02"
+        app:layout_constraintEnd_toStartOf="@+id/admin_add_02"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@+id/admin_campo_02"
+        app:layout_constraintTop_toTopOf="@+id/admin_campo_02"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/admin_insert_03"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#00FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:hint="@string/admin_nome_02"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#4D000000"
+        app:layout_constraintBottom_toBottomOf="@+id/admin_campo_03"
+        app:layout_constraintEnd_toStartOf="@+id/admin_add_03"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@+id/admin_campo_03"
+        app:layout_constraintTop_toTopOf="@+id/admin_campo_03"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/admin_add_01"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/admin_campo_01"
+        app:layout_constraintEnd_toStartOf="@+id/admin_del_01"
+        app:layout_constraintTop_toTopOf="@+id/admin_campo_01"
+        app:srcCompat="@drawable/saborear_icon_add"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/admin_add_02"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/admin_campo_02"
+        app:layout_constraintEnd_toStartOf="@+id/admin_del_02"
+        app:layout_constraintTop_toTopOf="@+id/admin_campo_02"
+        app:srcCompat="@drawable/saborear_icon_add"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/admin_add_03"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/admin_campo_03"
+        app:layout_constraintEnd_toStartOf="@+id/admin_del_03"
+        app:layout_constraintTop_toTopOf="@+id/admin_campo_03"
+        app:srcCompat="@drawable/saborear_icon_add"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/admin_del_01"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/admin_campo_01"
+        app:layout_constraintEnd_toEndOf="@+id/admin_campo_01"
+        app:layout_constraintTop_toTopOf="@+id/admin_campo_01"
+        app:srcCompat="@drawable/saborear_icon_remover"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/admin_del_02"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/admin_campo_02"
+        app:layout_constraintEnd_toEndOf="@+id/admin_campo_02"
+        app:layout_constraintTop_toTopOf="@+id/admin_campo_02"
+        app:srcCompat="@drawable/saborear_icon_remover"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/admin_del_03"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/admin_campo_03"
+        app:layout_constraintEnd_toEndOf="@+id/admin_campo_03"
+        app:layout_constraintTop_toTopOf="@+id/admin_campo_03"
+        app:srcCompat="@drawable/saborear_icon_remover"
+        tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/admin_btn_pesquisar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/admin_btn_perfil"
+            app:layout_constraintStart_toEndOf="@+id/admin_btn_home"
+            app:srcCompat="@drawable/saborear_icon_lupa" />
+
+        <ImageButton
+            android:id="@+id/admin_btn_home"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:windowSoftInputMode="adjustPan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/saborear_icon_home" />
+
+        <ImageButton
+            android:id="@+id/admin_btn_perfil"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/saborear_icon_perfil" />
+
+        <ImageButton
+            android:id="@+id/admin_btn_notificacao"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:windowSoftInputMode="adjustPan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/admin_btn_back"
+            app:layout_constraintStart_toEndOf="@+id/admin_btn_perfil"
+            app:srcCompat="@drawable/saborear_icon_notificacao" />
+
+        <ImageButton
+            android:id="@+id/admin_btn_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:windowSoftInputMode="adjustPan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/saborear_voltar" />
+
+        <ImageButton
+            android:id="@+id/admin_validar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#00FFFFFF"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toTopOf="@+id/admin_btn_pesquisar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/admin_campo_08"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/saborear_btn_validareceitas"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+        <Spinner
+        android:id="@+id/admin_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/admin_campo_04"
+        app:layout_constraintEnd_toEndOf="@+id/admin_campo_04"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/admin_campo_04" />
+
+    <Spinner
+        android:id="@+id/admin_spinner_chatbot"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/admin_campo_04"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/admin_campo_04"
+        app:layout_constraintTop_toBottomOf="@+id/admin_chatbot" />
+
+    <Spinner
+        android:id="@+id/admin_spinner_ingrediente_02"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/admin_campo_07"
+        app:layout_constraintEnd_toEndOf="@+id/admin_campo_07"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/admin_campo_07"
+        app:layout_constraintTop_toTopOf="@+id/admin_campo_07" />
+
+    <Spinner
+        android:id="@+id/admin_spinner_ingrediente"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/admin_campo_05"
+        app:layout_constraintEnd_toEndOf="@+id/admin_campo_05"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/admin_campo_05"
+        app:layout_constraintTop_toTopOf="@+id/admin_campo_05"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Spinner
+        android:id="@+id/admin_spinner_receita"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/admin_campo_06"
+        app:layout_constraintEnd_toEndOf="@+id/admin_campo_06"
+        app:layout_constraintStart_toStartOf="@+id/admin_campo_06"
+        app:layout_constraintTop_toTopOf="@+id/admin_campo_06" />
+
+    <ProgressBar
+        android:id="@+id/admin_carregar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="32dp"
+        android:layout_height="0dp"
+        android:indeterminateTint="#000000"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="invisible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

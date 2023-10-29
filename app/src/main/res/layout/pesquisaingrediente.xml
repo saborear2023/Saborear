@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pesquisaingrediente_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF">
+
+    <CheckBox
+        android:id="@+id/pesquisaingrediente_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:buttonTint="#1BAB4A"
+        android:text="@string/conter_todos_os_ingredientes"
+        app:layout_constraintBottom_toTopOf="@+id/pesquisaingrediente_btn_finish"
+        app:layout_constraintEnd_toEndOf="@+id/pesquisaingrediente_btn_finish"
+        app:layout_constraintStart_toStartOf="@+id/pesquisaingrediente_btn_finish"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/pesquisaingrediente_btn_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toTopOf="@+id/pesquisaingrediente_mensagem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/saborear_btn_pesquisar"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/pesquisaingrediente_sem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/pesquisaingrediente_receitas"
+        app:layout_constraintEnd_toEndOf="@+id/pesquisaingrediente_receitas"
+        app:layout_constraintStart_toStartOf="@+id/pesquisaingrediente_receitas"
+        app:layout_constraintTop_toTopOf="@+id/pesquisaingrediente_receitas"
+        app:srcCompat="@drawable/saborear_semreceita"
+        tools:ignore="TouchTargetSizeCheck,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/pesquisaingrediente_mensagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/alata"
+        android:text="@string/receitas_encontradas"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/pesquisaingrediente_receitas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pesquisaingrediente_receitas"
+        android:layout_width="0dp"
+        android:layout_height="195dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:scrollbars="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/pesquisaingrediente_btn_perfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ListView
+        android:id="@+id/pesquisaingrediente_listview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="24dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00FFFFFF"
+        android:cacheColorHint="#00FFFFFF"
+        android:divider="#00FFFFFF"
+        android:dividerHeight="16dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/pesquisaingrediente_checkbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pesquisaingrediente_titulo" />
+
+    <TextView
+        android:id="@+id/pesquisaingrediente_titulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:justificationMode="inter_word"
+        android:scrollbars="vertical"
+        android:text="@string/n_o_sabe_o_que_cozinhar_escolha_os_ingredientes_que_voc_tem_em_casa_e_n_s_forceremos_uma_lista_de_receitas_que_voc_possa_fazer"
+        android:textColor="#BF000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pesquisaingrediente_btn_voltar"
+        tools:ignore="VisualLintLongText" />
+
+    <ImageButton
+        android:id="@+id/pesquisaingrediente_btn_voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/saborear_voltar_pesquisaingrediente"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/pesquisaingrediente_btn_pesquisar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pesquisaingrediente_btn_perfil"
+        app:layout_constraintStart_toEndOf="@+id/pesquisaingrediente_btn_home"
+        app:srcCompat="@drawable/saborear_icon_lupa" />
+
+    <ImageButton
+        android:id="@+id/pesquisaingrediente_btn_home"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:windowSoftInputMode="adjustPan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/saborear_icon_home" />
+
+    <ImageButton
+        android:id="@+id/pesquisaingrediente_btn_perfil"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/saborear_icon_perfil" />
+
+    <ImageButton
+        android:id="@+id/pesquisaingrediente_btn_notificacao"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:windowSoftInputMode="adjustPan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pesquisaingrediente_btn_back"
+        app:layout_constraintStart_toEndOf="@+id/pesquisaingrediente_btn_perfil"
+        app:srcCompat="@drawable/saborear_icon_notificacao" />
+
+    <ImageButton
+        android:id="@+id/pesquisaingrediente_btn_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:importantForAccessibility="no"
+        android:windowSoftInputMode="adjustPan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/saborear_voltar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

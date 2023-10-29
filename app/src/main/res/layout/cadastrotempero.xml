@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    android:fillViewport="true"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cadastrotempero_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF">
+
+        <ImageButton
+            android:id="@+id/cadastrotempero_btn_voltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="28dp"
+            android:background="#00FFFFFF"
+            android:importantForAccessibility="no"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/saborear_voltar_cadastrotemperos"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/cadastrotempero_btn_pesquisar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cadastrotempero_btn_perfil"
+            app:layout_constraintStart_toEndOf="@+id/cadastrotempero_btn_home"
+            app:srcCompat="@drawable/saborear_icon_lupa" />
+
+        <ImageButton
+            android:id="@+id/cadastrotempero_btn_home"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:windowSoftInputMode="adjustPan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/saborear_icon_home" />
+
+        <ImageButton
+            android:id="@+id/cadastrotempero_btn_perfil"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/saborear_icon_perfil" />
+
+        <ImageButton
+            android:id="@+id/cadastrotempero_btn_notificacao"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:windowSoftInputMode="adjustPan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cadastrotempero_btn_back"
+            app:layout_constraintStart_toEndOf="@+id/cadastrotempero_btn_perfil"
+            app:srcCompat="@drawable/saborear_icon_notificacao" />
+
+        <ImageButton
+            android:id="@+id/cadastrotempero_btn_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:windowSoftInputMode="adjustPan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/saborear_voltar" />
+
+        <ImageView
+            android:id="@+id/cadastrotempero_campo_01"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:importantForAccessibility="no"
+            android:scaleType="fitXY"
+            android:tint="#81F8F8F8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cadastrotempero_btn_voltar"
+            app:srcCompat="@drawable/saborear_campo_08"
+            tools:ignore="UseAppTint,ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/cadastrotempero_campo_02"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:importantForAccessibility="no"
+            android:scaleType="fitXY"
+            android:tint="#81F8F8F8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cadastrotempero_campo_03"
+            app:srcCompat="@drawable/saborear_campo_08"
+            tools:ignore="UseAppTint,ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/cadastrotempero_campo_03"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:importantForAccessibility="no"
+            android:scaleType="fitXY"
+            android:tint="#81F8F8F8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cadastrotempero_campo_04"
+            app:srcCompat="@drawable/saborear_campo_08"
+            tools:ignore="UseAppTint,ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/cadastrotempero_campo_04"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:importantForAccessibility="no"
+            android:scaleType="fitXY"
+            android:tint="#81F8F8F8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cadastrotempero_campo_01"
+            app:srcCompat="@drawable/saborear_campo_08"
+            tools:ignore="UseAppTint,ImageContrastCheck" />
+
+        <EditText
+            android:id="@+id/cadastrotempero_insert_01"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="#00FFFFFF"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="Nome"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:maxLength="50"
+            android:textColor="#000000"
+            android:textColorHint="#4D000000"
+            app:layout_constraintBottom_toBottomOf="@+id/cadastrotempero_campo_01"
+            app:layout_constraintEnd_toEndOf="@+id/cadastrotempero_campo_01"
+            app:layout_constraintStart_toStartOf="@+id/cadastrotempero_campo_01"
+            app:layout_constraintTop_toTopOf="@+id/cadastrotempero_campo_01"
+            tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/cadastrotempero_insert_02"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#00FFFFFF"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:gravity="start|top"
+            android:hint="@string/descri_o"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            android:lines="15"
+            android:maxLength="1000"
+            android:singleLine="false"
+            android:textColorHint="#4D000000"
+            app:layout_constraintBottom_toBottomOf="@+id/cadastrotempero_campo_04"
+            app:layout_constraintEnd_toEndOf="@+id/cadastrotempero_campo_04"
+            app:layout_constraintStart_toStartOf="@+id/cadastrotempero_campo_04"
+            app:layout_constraintTop_toTopOf="@+id/cadastrotempero_campo_04"
+            tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+        <Button
+            android:id="@+id/cadastrotempero_btn_imagem"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="#00FFFFFF"
+            android:fontFamily="sans-serif"
+            android:gravity="center|start"
+            android:importantForAccessibility="no"
+            android:text="@string/imagem"
+            android:textAllCaps="false"
+            android:textColor="#4D000000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/cadastrotempero_campo_03"
+            app:layout_constraintEnd_toStartOf="@+id/cadastrotempero_icon_finish"
+            app:layout_constraintStart_toStartOf="@+id/cadastrotempero_campo_03"
+            app:layout_constraintTop_toTopOf="@+id/cadastrotempero_campo_03"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck,VisualLintButtonSize" />
+
+        <ImageView
+            android:id="@+id/cadastrotempero_icon_finish"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginEnd="8dp"
+            android:importantForAccessibility="no"
+            android:tint="#989898"
+            app:layout_constraintBottom_toBottomOf="@+id/cadastrotempero_campo_03"
+            app:layout_constraintEnd_toEndOf="@+id/cadastrotempero_campo_03"
+            app:layout_constraintTop_toTopOf="@+id/cadastrotempero_campo_03"
+            app:srcCompat="@drawable/saborear_icon_delete"
+            tools:ignore="UseAppTint,ImageContrastCheck" />
+
+        <Spinner
+            android:id="@+id/cadastrotempero_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="@+id/cadastrotempero_campo_02"
+            app:layout_constraintEnd_toEndOf="@+id/cadastrotempero_campo_02"
+            app:layout_constraintStart_toStartOf="@+id/cadastrotempero_campo_02"
+            app:layout_constraintTop_toTopOf="@+id/cadastrotempero_campo_02" />
+
+        <ListView
+            android:id="@+id/receita_listview_nutricional"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#00FFFFFF"
+            android:backgroundTint="#00FFFFFF"
+            android:cacheColorHint="#00FFFFFF"
+            android:divider="#00FFFFFF"
+            android:dividerHeight="16dp"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/cadastrotempero_btn_cadastrar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cadastrotempero_campo_02"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/cadastrotempero_btn_cadastrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="#00FFFFFF"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toTopOf="@+id/cadastrotempero_btn_pesquisar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/saborear_btn_save"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+        <ProgressBar
+            android:id="@+id/cadastrotempero_carregar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:indeterminateTint="#000000"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/receita_listview_nutricional"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/cadastrotempero_campo_01" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

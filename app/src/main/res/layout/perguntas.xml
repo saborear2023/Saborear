@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/perguntas_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/perguntas_btn_voltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="28dp"
+            android:background="#00FFFFFF"
+            android:importantForAccessibility="no"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/saborear_voltar_perguntas"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/perguntas_btn_pesquisar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/perguntas_btn_perfil"
+            app:layout_constraintStart_toEndOf="@+id/perguntas_btn_home"
+            app:srcCompat="@drawable/saborear_icon_lupa" />
+
+        <ImageButton
+            android:id="@+id/perguntas_btn_home"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:windowSoftInputMode="adjustPan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/saborear_icon_home" />
+
+        <ImageButton
+            android:id="@+id/perguntas_btn_perfil"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/saborear_icon_perfil" />
+
+        <ImageButton
+            android:id="@+id/perguntas_btn_notificacao"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:windowSoftInputMode="adjustPan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/perguntas_btn_back"
+            app:layout_constraintStart_toEndOf="@+id/perguntas_btn_perfil"
+            app:srcCompat="@drawable/saborear_icon_notificacao" />
+
+        <ImageButton
+            android:id="@+id/perguntas_btn_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:importantForAccessibility="no"
+            android:windowSoftInputMode="adjustPan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/saborear_voltar" />
+
+        <Button
+            android:id="@+id/pergunta1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/saborear_btn_redondo"
+            android:backgroundTint="#D9D9D9"
+            android:fontFamily="@font/alata"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/quais_permiss_es_eu_preciso_conceder_para_utilizar_o_aplicativo"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/perguntas_btn_voltar"
+            tools:ignore="TextSizeCheck,VisualLintButtonSize" />
+
+        <TextView
+            android:id="@+id/texto1"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alata"
+            android:text="@string/para_usar_nosso_aplicativo_necess_rio_conceder_algumas_permiss_es_sendo_elas_n_n_acesso_a_c_mera_n_acesso_aos_arquivos_e_galeria_do_celular_n_acesso_aos_sms_n_acesso_a_udios_e_chamadas_n_envio_de_notifica_es_n_nn_o_se_preocupe_essas_permiss_es_nos_ajudam_a_melhorar_sua_experi_ncia_e_a_usabilidade_do_aplicativo_nenhum_dado_seu_ser_compartilhado_com_terceiros_n_nd_vidas_sobre_o_armazenamento_releia_nossos_termos_de_uso"
+            android:textColor="#000000"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pergunta1" />
+
+        <Button
+            android:id="@+id/pergunta2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/saborear_btn_redondo"
+            android:backgroundTint="#D9D9D9"
+            android:fontFamily="@font/alata"
+            android:padding="8dp"
+            android:text="@string/como_fa_o_para_cadastrar_uma_nova_receita_no_aplicativo"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/texto1"
+            tools:ignore="TextSizeCheck,VisualLintButtonSize" />
+
+        <TextView
+            android:id="@+id/texto2"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alata"
+            android:text="@string/para_cadastrar_uma_nova_receita_basta_acessar_a_guia_cadastrar_receita_no_menu_principal_preencha_os_campos_solicitados_como_o_nome_da_receita_lista_de_ingredientes_modo_de_preparo_e_categoria_ap_s_preencher_os_detalhes_clique_em_enviar_para_publicar_a_receita_em_nosso_aplicativo"
+            android:textColor="#000000"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pergunta2" />
+
+        <Button
+            android:id="@+id/pergunta3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/saborear_btn_redondo"
+            android:backgroundTint="#D9D9D9"
+            android:fontFamily="@font/alata"
+            android:padding="8dp"
+            android:text="@string/posso_editar_ou_excluir_uma_receita_que_j_cadastrei"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/texto2"
+            tools:ignore="TextSizeCheck,VisualLintButtonSize" />
+
+        <TextView
+            android:id="@+id/texto3"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alata"
+            android:text="@string/sim_poss_vel_editar_suas_receitas_cadastradas_v_at_a_p_gina_da_receita_que_deseja_modificar_e_clique_no_bot_o_editar_para_excluir_uma_receita_acesse_a_mesma_p_gina_de_edi_o_e_selecione_a_op_o_excluir_receita_lembre_se_que_as_receitas_exclu_das_n_o_poder_o_ser_recuperadas"
+            android:textColor="#000000"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pergunta3" />
+
+        <Button
+            android:id="@+id/pergunta4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/saborear_btn_redondo"
+            android:backgroundTint="#D9D9D9"
+            android:fontFamily="@font/alata"
+            android:padding="8dp"
+            android:text="@string/como_fa_o_para_favoritar_uma_receita_e_onde_posso_acess_las"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/texto3"
+            tools:ignore="TextSizeCheck,VisualLintButtonSize" />
+
+        <TextView
+            android:id="@+id/texto4"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alata"
+            android:text="@string/para_favoritar_uma_receita_v_at_a_p_gina_da_receita_desejada_e_clique_no_cone_de_cora_o_para_acessar_suas_receitas_favoritas_basta_ir_ao_menu_minhas_receitas_favoritas_no_qual_estar_o_listadas_todas_as_receitas_que_voc_marcou_como_favoritas"
+            android:textColor="#000000"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pergunta4" />
+
+        <Button
+            android:id="@+id/pergunta5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/saborear_btn_redondo"
+            android:backgroundTint="#D9D9D9"
+            android:fontFamily="@font/alata"
+            android:padding="8dp"
+            android:text="@string/poss_vel_compartilhar_uma_receita_com_outras_pessoas_por_meio_do_aplicativo"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/texto4"
+            tools:ignore="TextSizeCheck,VisualLintButtonSize" />
+
+        <TextView
+            android:id="@+id/texto5"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alata"
+            android:text="@string/n_o_disponibilizamos_essa_op_o_mas_poss_vel_o_compartilhamento_do_aplicativo"
+            android:textColor="#000000"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pergunta5" />
+
+        <Button
+            android:id="@+id/pergunta6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/saborear_btn_redondo"
+            android:backgroundTint="#D9D9D9"
+            android:fontFamily="@font/alata"
+            android:padding="8dp"
+            android:text="@string/posso_comentar_nas_receitas_de_outros_e_ver_os_que_recebi_nas_minhas_receitas"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/texto5"
+            tools:ignore="TextSizeCheck,VisualLintButtonSize" />
+
+        <TextView
+            android:id="@+id/texto6"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alata"
+            android:text="@string/sim_voc_pode_deixar_coment_rios_nas_receitas_de_outros_usu_rios_para_elogiar_fazer_perguntas_ou_dar_sugest_es_al_m_disso_voc_ser_notificado_quando_receber_coment_rios_em_suas_pr_prias_receitas"
+            android:textColor="#000000"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pergunta6" />
+
+        <Button
+            android:id="@+id/pergunta7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/saborear_btn_redondo"
+            android:backgroundTint="#D9D9D9"
+            android:fontFamily="@font/alata"
+            android:padding="8dp"
+            android:text="@string/como_funciona_o_sistema_de_avalia_o_de_receitas"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/texto6"
+            tools:ignore="TextSizeCheck,VisualLintButtonSize" />
+
+        <TextView
+            android:id="@+id/texto7"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alata"
+            android:text="@string/nosso_sistema_de_avalia_o_permite_que_voc_d_uma_nota_de_1_a_5_estrelas_para_as_receitas_que_experimentou_basta_acessar_a_p_gina_da_receita_e_clicar_nas_estrelas_para_classific_la"
+            android:textColor="#000000"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pergunta7" />
+
+        <Button
+            android:id="@+id/pergunta8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/saborear_btn_redondo"
+            android:backgroundTint="#D9D9D9"
+            android:fontFamily="@font/alata"
+            android:padding="8dp"
+            android:text="@string/poss_vel_filtrar_as_receitas_por_tipo_de_comida_ou_crit_rios_mais_avan_ados"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/texto7"
+            tools:ignore="TextSizeCheck,VisualLintButtonSize" />
+
+        <TextView
+            android:id="@+id/texto8"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alata"
+            android:text="@string/sim_voc_pode_filtrar_as_receitas_por_tipo_de_comida_temos_diversas_categorias_dispon_veis_como_sobremesas_pratos_principais_receitas_veganas_entre_outras_basta_selecionar_a_categoria_desejada_na_p_gina_de_busca_ou_pedir_uma_sugest_o_no_nosso_chatbot_n_e_tamb_m_nossa_busca_avan_ada_permite_refinar_as_pesquisas_por_crit_rios_como_tempo_de_preparo_n_vel_de_dificuldade_e_ingredientes_utilizados_utilize_os_filtros_dispon_veis_na_p_gina_de_busca_para_encontrar_receitas_que_se_adequem_s_suas_prefer_ncias"
+            android:textColor="#000000"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pergunta8" />
+
+        <Button
+            android:id="@+id/pergunta9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/saborear_btn_redondo"
+            android:backgroundTint="#D9D9D9"
+            android:fontFamily="@font/alata"
+            android:padding="8dp"
+            android:text="@string/o_aplicativo_oferece_substitui_es_para_pessoas_com_restri_es_alimentares"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/texto8"
+            tools:ignore="TextSizeCheck,VisualLintButtonSize" />
+
+        <TextView
+            android:id="@+id/texto9"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alata"
+            android:text="@string/sim_nosso_aplicativo_oferece_dicas_e_substitui_es_de_receitas_para_atender_a_diferentes_restri_es_alimentares"
+            android:textColor="#000000"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pergunta9" />
+
+        <Button
+            android:id="@+id/pergunta10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/saborear_btn_redondo"
+            android:backgroundTint="#D9D9D9"
+            android:fontFamily="@font/alata"
+            android:padding="8dp"
+            android:text="@string/como_entro_em_contato_com_a_equipe_se_tiver_algum_problema_ou_sugest_o"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/perguntas_btn_home"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/texto9"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="TextSizeCheck,VisualLintButtonSize" />
+
+        <TextView
+            android:id="@+id/texto10"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/alata"
+            android:text="@string/se_voc_tiver_algum_problema_ou_sugest_o_pode_entrar_em_contato_com_nossa_equipe_de_suporte_atrav_s_da_guia_entrar_em_contato_no_menu_ajuda"
+            android:textColor="#000000"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/perguntas_btn_pesquisar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pergunta10"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/submarket_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/submarket_campo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="-16dp"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/submarket_listview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/saborear_campo_12"
+        tools:ignore="ImageContrastCheck" />
+
+    <ListView
+        android:id="@+id/submarket_listview"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00FFFFFF"
+        android:divider="#FFE8E8E8"
+        android:dividerHeight="16dp"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submarket_titulo_encontrados"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/submarket_titulo_quantidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/alata"
+        android:scrollbars="vertical"
+        android:text="@string/quantidade"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/submarket_insert_nome"
+        app:layout_constraintTop_toBottomOf="@+id/submarket_insert_nome" />
+
+    <TextView
+        android:id="@+id/submarket_titulo_referencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="78dp"
+        android:fontFamily="@font/alata"
+        android:scrollbars="vertical"
+        android:text="@string/site_de_refer_ncia"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/submarket_titulo_quantidade"
+        app:layout_constraintEnd_toEndOf="@+id/submarket_campo"
+        app:layout_constraintStart_toEndOf="@+id/submarket_titulo_quantidade"
+        app:layout_constraintTop_toTopOf="@+id/submarket_titulo_quantidade" />
+
+    <TextView
+        android:id="@+id/submarket_titulo_encontrados"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/alata"
+        android:isScrollContainer="true"
+        android:scrollbars="vertical"
+        android:text="@string/op_es_de_marcas_encontradas"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/submarket_campo"
+        app:layout_constraintStart_toStartOf="@+id/submarket_insert_quantidade"
+        app:layout_constraintTop_toBottomOf="@+id/submarket_insert_quantidade" />
+
+    <TextView
+        android:id="@+id/submarket_insert_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/alata"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/submarket_campo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/submarket_campo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/submarket_insert_referencia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alata"
+        android:scrollbars="vertical"
+        android:textColor="#BF000000"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/submarket_titulo_referencia"
+        app:layout_constraintTop_toBottomOf="@+id/submarket_titulo_referencia"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/submarket_insert_quantidade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alata"
+        android:scrollbars="vertical"
+        android:textColor="#BF000000"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/submarket_titulo_quantidade"
+        app:layout_constraintTop_toBottomOf="@+id/submarket_titulo_quantidade"
+        tools:ignore="SmallSp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

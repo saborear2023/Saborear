@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#00FFFFFF"
+    android:backgroundTint="#00FFFFFF">
+
+    <ImageView
+        android:id="@+id/subingrediente_campo_01"
+        android:layout_width="100dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        android:tint="#81F8F8F8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/saborear_campo_08"
+        tools:ignore="UseAppTint" />
+
+    <ImageView
+        android:id="@+id/subingrediente_campo_02"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        android:tint="#81F8F8F8"
+        app:layout_constraintBottom_toBottomOf="@+id/subingrediente_del"
+        app:layout_constraintEnd_toEndOf="@+id/subingrediente_formato"
+        app:layout_constraintStart_toStartOf="@+id/subingrediente_formato"
+        app:layout_constraintTop_toTopOf="@+id/subingrediente_del"
+        app:srcCompat="@drawable/saborear_campo_08"
+        tools:ignore="ImageContrastCheck,UseAppTint" />
+
+    <ImageView
+        android:id="@+id/subingrediente_campo_03"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        android:tint="#81F8F8F8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/subingrediente_campo_02"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/saborear_campo_08"
+        tools:ignore="UseAppTint" />
+
+    <ImageButton
+        android:id="@+id/subingrediente_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/subingrediente_quantidade"
+        app:layout_constraintEnd_toEndOf="@+id/subingrediente_campo_03"
+        app:layout_constraintTop_toTopOf="@+id/subingrediente_quantidade"
+        app:srcCompat="@drawable/saborear_icon_remover"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Spinner
+        android:id="@+id/subingrediente_ingrediente"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#00FFFFFF"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="@+id/subingrediente_campo_03"
+        app:layout_constraintEnd_toStartOf="@+id/subingrediente_edit"
+        app:layout_constraintStart_toEndOf="@+id/subingrediente_icon_lanche"
+        app:layout_constraintTop_toTopOf="@+id/subingrediente_campo_03"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Spinner
+        android:id="@+id/subingrediente_formato"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="#00FFFFFF"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="@+id/subingrediente_campo_02"
+        app:layout_constraintStart_toEndOf="@+id/subingrediente_del"
+        app:layout_constraintTop_toTopOf="@+id/subingrediente_campo_02"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/subingrediente_icon_lanche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/subingrediente_campo_03"
+        app:layout_constraintStart_toStartOf="@+id/subingrediente_campo_03"
+        app:layout_constraintTop_toTopOf="@+id/subingrediente_campo_03"
+        app:srcCompat="@drawable/saborear_icon_lanche" />
+
+    <EditText
+        android:id="@+id/subingrediente_quantidade"
+        android:layout_width="32dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:gravity="center"
+        android:importantForAutofill="no"
+        android:inputType="number|numberDecimal|numberSigned"
+        android:text="@string/_0"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/subingrediente_campo_01"
+        app:layout_constraintEnd_toStartOf="@+id/subingrediente_del"
+        app:layout_constraintStart_toEndOf="@+id/subingrediente_add"
+        app:layout_constraintTop_toTopOf="@+id/subingrediente_campo_01"
+        tools:ignore="LabelFor,SmallSp,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/subingrediente_add"
+        android:layout_width="32dp"
+        android:layout_height="0dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/subingrediente_campo_01"
+        app:layout_constraintStart_toStartOf="@+id/subingrediente_campo_01"
+        app:layout_constraintTop_toTopOf="@+id/subingrediente_campo_01"
+        app:srcCompat="@drawable/saborear_icon_add"
+        tools:ignore="TouchTargetSizeCheck,ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/subingrediente_del"
+        android:layout_width="32dp"
+        android:layout_height="0dp"
+        android:background="#00FFFFFF"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/subingrediente_campo_01"
+        app:layout_constraintEnd_toEndOf="@+id/subingrediente_campo_01"
+        app:layout_constraintTop_toTopOf="@+id/subingrediente_campo_01"
+        app:srcCompat="@drawable/saborear_icon_remover"
+        tools:ignore="TouchTargetSizeCheck,ImageContrastCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>
